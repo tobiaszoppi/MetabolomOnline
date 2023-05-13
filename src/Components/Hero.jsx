@@ -3,16 +3,15 @@ import {Container} from "@mui/system";
 import React from "react";
 import Navbar from "./Navbar";
 
-import heroImg from "../media/hero_illustration.png";
-import metaLogo from "../media/metabolomLogo.png";
+import heroImg from "../media/metabolomLogo.png";
 import CustomButton from "./CustomButton";
 
 const Hero = () => {
-    const CustomBox = styled(Box)(({theme}) => ({
+    const CustomBox = styled(Box)(({ theme }) => ({
         display: "flex",
         justifyContent: "center",
         gap: theme.spacing(5),
-        marginTop: theme.spacing(5),
+        marginTop: theme.spacing(3),
         [theme.breakpoints.down("md")]: {
             flexDirection: "column",
             alignItems: "center",
@@ -20,33 +19,41 @@ const Hero = () => {
         },
     }));
 
-    const Title
-        = styled(Typography)(({theme}) => ({
+    const Title = styled(Typography)(({ theme }) => ({
         fontSize: "64px",
         color: "#000336",
         fontWeight: "bold",
         margin: theme.spacing(4, 0, 4, 0),
         [theme.breakpoints.down("sm")]: {
-            fontSize: "30px"
+            fontSize: "40px",
         },
     }));
 
     return (
-        <Box sx={{backgroundColor: "#E6F0FF", minHeight: "80vh"}}>
+        <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh" }}>
             <Container>
-                <Navbar/>
+                <Navbar />
                 <CustomBox>
-                    <Box sx={{flex: "1"}}>
-                        <Typography variant="body2" sx={{
-                            fontSize: "18px", color: "#687690", fontWeight: "500", mt: 10, mb: 4
-                        }}>
+                    <Box sx={{ flex: "1" }}>
+                        <Typography
+                            variant="body2"
+                            sx={{
+                                fontSize: "18px",
+                                color: "#687690",
+                                fontWeight: "500",
+                                mt: 10,
+                                mb: 4,
+                            }}
+                        >
                             Metabolom Online
                         </Typography>
                         <Title variant="h1">
-                            Obtenga la atención que necesita, cuando la necesita, con los servicios en línea de
-                            Metabolom.
+                            Obtenga la atención que necesita al alcance de un click!
                         </Title>
-                        <Typography variant="body2" sx={{fontSize: "18px", color: "#5A6473", my: 4}}>
+                        <Typography
+                            variant="body2"
+                            sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
+                        >
                             Metabolom brinda un servicio multidisciplinario bioquímico-médico-nutricionista para la
                             investigación y
                             diagnóstico de Enfermedades Metabólicas Congénitas y Adquiridas en pacientes neonatos, niños
@@ -71,6 +78,6 @@ const Hero = () => {
             </Container>
         </Box>
     );
-}
+};
 
 export default Hero;
