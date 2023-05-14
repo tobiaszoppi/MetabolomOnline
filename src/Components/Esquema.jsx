@@ -4,7 +4,7 @@ import Ilustracion1 from "../media/illustration-features-tab-1.svg";
 import Ilustracion2 from "../media/illustration-features-tab-2.svg";
 import Ilustracion3 from "../media/illustration-features-tab-3.svg";
 
-const EsquemaContainer = styled(Box)(
+const CustomBox = styled(Box)(
     ( { theme } ) => (
         {
             maxWidth: "100%",
@@ -27,14 +27,13 @@ const EsquemaContainer = styled(Box)(
         }
     ));
 
-const CustomBox = styled(Box)(
+const CustomBox2 = styled(Box)(
     ( { theme } ) => (
         {
             paddingBottom: "2rem",
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            backgroundColor: "#E6F0FF",
             gap: theme.spacing(5),
             [ theme.breakpoints.down("md") ]: {
                 flexDirection: "column",
@@ -192,7 +191,7 @@ const Esquema = () =>
         const [option, setOption] = useState("1");
         return (
             <CustomBox>
-                <EsquemaContainer>
+                <CustomBox2>
                     <Titulo>Esquema de Trabajo</Titulo>
                     <Texto variant="body2">
                         Nuestro objetivo es ofrecerle un servicio integral y personalizado para mejorar su salud y
@@ -284,7 +283,7 @@ const Esquema = () =>
                             </Carta>
                         ) }
                     </div>
-                </EsquemaContainer>
+                </CustomBox2>
             </CustomBox>
         );
     }

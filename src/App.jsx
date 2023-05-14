@@ -4,6 +4,7 @@ import Guide from "./Components/Guide";
 import Properties from "./Components/Properties";
 import Esquema from "./Components/Esquema";
 import Formulario from "./Components/Formulario";
+import FAQ from "./Components/FAQ";
 
 function App() {
     return <>
@@ -11,6 +12,7 @@ function App() {
         <Guide/>
         <Companies/>
         <Esquema/>
+        <FAQ/>
         <Properties/>
         <Formulario/>
     </>;
