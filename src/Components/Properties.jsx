@@ -133,7 +133,7 @@ const PropertiesBox = styled(Box)(
 const Properties = () =>
     {
         return (
-            <Box sx={ { t: 5, backgroundColor: "#E6F0FF", py: 10 } }>
+            <Box sx={ { t: 5, backgroundColor: "#E6F0FF", py: 1 } }>
                 <Container>
                     <PropertiesBox>
                         <Typography sx={ { color: "#000339", fontSize: "35px", fontWeight: "bold" } }>

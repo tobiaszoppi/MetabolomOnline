@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './style.css'
 import StyledUploadFile from "../uploadFile";
 
-const Form = () => {
+const FormComponent = () => {
     const [formData, setFormData] = useState({
         fullName: '',
         dateOfBirth: '',
@@ -308,4 +308,4 @@ const Form = () => {
     );
 };
 
-export default Form;
+export default FormComponent;

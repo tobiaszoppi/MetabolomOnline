@@ -1,5 +1,6 @@
 .container {
     max-width: 1200px;
+    height: auto;
     border-radius: 30px;
     padding: 30px;
     margin: auto;
@@ -29,7 +30,7 @@
     font-family: 'Poppins', sans-serif;
     position: relative;
     margin-top: 16px;
-    min-height: 490px;
+    min-height: 600px;
     background-color: #fff;
     overflow: hidden;
 }

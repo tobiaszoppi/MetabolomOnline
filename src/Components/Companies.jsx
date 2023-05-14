@@ -4,35 +4,25 @@ import logoImg from "../media/metabolomLogoTexto.png";
 import logosImg from "../media/logos.png";
 import manosChicoImg from "../media/hermanosJugandoImg.jpg";
 
+const CustomContainer = styled(Container)(
+    ( { theme } ) => (
+        {
+            display: "flex",
+            justifyContent: "space-between",
+            [ theme.breakpoints.down("md") ]: {
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
+            }
+        }
+    ));
+
 const Companies = () =>
     {
-        const CustomContainer = styled(Container)(
-            ( { theme } ) => (
-                {
-                    display: "flex",
-                    justifyContent: "space-between",
-                    [ theme.breakpoints.down("md") ]: {
-                        flexDirection: "column",
-                        alignItems: "center",
-                        textAlign: "center",
-                        marginBottom: theme.spacing(4),
-                    }
-                }
-            ));
-
-        const CustomBox = styled(Box)(
-            ( { theme } ) => (
-                {
-                    [ theme.breakpoints.down("md") ]: {
-                        marginBottom: theme.spacing(4),
-                    }
-                }
-            ));
-
         return (
             <Box sx={ { backgroundImage: `url(${ manosChicoImg })`, backgroundSize: "cover", backgroundRepeat: "no-repeat" } }>
                 <CustomContainer>
-                    <CustomBox>
+
                         <img src={ logoImg } alt="logo" style={ { maxWidth: "30%", minWidth: "200px", marginTop: "20px" } }/>
                         <Typography variant="body2"
                                     sx={ {
@@ -56,7 +46,7 @@ const Companies = () =>
                             Se estudian casos del espectro autista, trastornos del desarrollo, celiaquía, intolerancia a los alimentos, alergias específicas, dermatitis, enfermedades metabólicas congénitas, disbiosis.<br></br>
                             Los encuentros se realizan con el tutor del menor y en algunos casos pueden solicitarse fotos del mismo para explicar alguna situación clínica en particular.
                         </Typography>
-                    </CustomBox>
+
                 </CustomContainer>
 
 

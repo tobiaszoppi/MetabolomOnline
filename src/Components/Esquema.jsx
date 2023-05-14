@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Box, Button, Container, styled, Typography} from "@mui/material";
+import {Box, styled, Typography} from "@mui/material";
 import Ilustracion1 from "../media/illustration-features-tab-1.svg";
 import Ilustracion2 from "../media/illustration-features-tab-2.svg";
 import Ilustracion3 from "../media/illustration-features-tab-3.svg";
@@ -7,17 +7,23 @@ import Ilustracion3 from "../media/illustration-features-tab-3.svg";
 const EsquemaContainer = styled(Box)(
     ( { theme } ) => (
         {
-            maxWidth: "95%",
-            margin: "auto",
+            maxWidth: "100%",
             padding: "1rem",
+            margin: theme.spacing(4, 3, 4, 3),
+            marginTop: "2rem",
             backgroundColor: "white",
             borderRadius: "15px",
             boxShadow: "0 0 6px rgba(0, 0, 0, 0.2)",
 
             [ theme.breakpoints.down("md") ]: {
-                margin: theme.spacing(2, 0, 2, 0),
-                textAlign: "center",
+                margin: theme.spacing(4, 3, 4, 3),
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "center",
             },
+            [ theme.breakpoints.down("sm") ]: {
+                maxWidth: "100%",
+            }
         }
     ));
 
@@ -91,8 +97,13 @@ const Carta = styled(Box)(
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            padding: theme.spacing(4),
+            padding: theme.spacing(4, 4, 0, 4),
+            "p": {
+                fontFamily: "'Hanken Grotesk', sans-serif",
+                margin: theme.spacing(2, 2),
+            },
             [ theme.breakpoints.down("md") ]: {
+                padding: theme.spacing(4),
                 justifyContent: "center",
                 flexDirection: "column",
             },
@@ -122,10 +133,10 @@ const Imagen = styled(Box)(
 const ContenedorSecundario = styled(Box)(
     ( { theme } ) => (
         {
-            "p": {
-                fontFamily: "'Hanken Grotesk', sans-serif",
-                margin: theme.spacing(2, 2),
-            },
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
         }
     ));
 
@@ -224,56 +235,52 @@ const Esquema = () =>
                                 <Imagen>
                                     <img src={ Ilustracion2 } alt="features"/>
                                 </Imagen>
-                                <div>
-                                    <ContenedorSecundario>
-                                        <TituloSecundario>Diagnostico de Resultados y Acompañamiento del
-                                            Paciente</TituloSecundario>
-                                        <TextoSecundario>
-                                            Luego de la evaluacion inicial, le ofrecemos un diagnostico de resultados y
-                                            un
-                                            acompañamiento.<br/>
-                                            Esto implica:<br/>
-                                            <br/>
-                                            - Acompañamiento del paciente y logística para la realización de estudios
-                                            específicos de laboratorio, según las necesidades de cada caso.<br/>
-                                            - Interpretación de resultados de los estudios solicitados, con un enfoque
-                                            bioquímico y médico.<br/>
-                                            - Coordinación para el segundo encuentro virtual Bioquímico-Médico-Paciente,
-                                            donde le explicaremos los resultados encontrados y cómo se relacionan con su
-                                            clínica.<br/>
-                                            - Tratamiento y guía para comenzar a mejorar sus síntomas, con
-                                            recomendaciones
-                                            nutricionales y hábitos saludables.
-                                        </TextoSecundario>
-                                        <Informacion href="/">Completar Formulario</Informacion>
-                                    </ContenedorSecundario>
-                                </div>
+                                <ContenedorSecundario>
+                                <TituloSecundario>Diagnostico de Resultados y Acompañamiento del
+                                    Paciente</TituloSecundario>
+                                <TextoSecundario>
+                                    Luego de la evaluacion inicial, le ofrecemos un diagnostico de resultados y
+                                    un
+                                    acompañamiento.<br/>
+                                    Esto implica:<br/>
+                                    <br/>
+                                    - Acompañamiento del paciente y logística para la realización de estudios
+                                    específicos de laboratorio, según las necesidades de cada caso.<br/>
+                                    - Interpretación de resultados de los estudios solicitados, con un enfoque
+                                    bioquímico y médico.<br/>
+                                    - Coordinación para el segundo encuentro virtual Bioquímico-Médico-Paciente,
+                                    donde le explicaremos los resultados encontrados y cómo se relacionan con su
+                                    clínica.<br/>
+                                    - Tratamiento y guía para comenzar a mejorar sus síntomas, con
+                                    recomendaciones
+                                    nutricionales y hábitos saludables.
+                                </TextoSecundario>
+                                <Informacion href="/">Completar Formulario</Informacion>
+                                </ContenedorSecundario>
                             </Carta>
                         ) : (
                             <Carta>
                                 <Imagen>
                                     <img src={ Ilustracion3 } alt="features"/>
                                 </Imagen>
-                                <div>
-                                    <ContenedorSecundario>
-                                        <TituloSecundario>Seguimiento</TituloSecundario>
-                                        <TextoSecundario>
-                                            El seguimiento se coordina según la necesidad del paciente o la decisión del
-                                            equipo de salud de Metabolom, y puede ser de dos tipos:<br/>
-                                            <br/>
-                                            - Seguimiento general: se realiza a los 90 días de iniciado el tratamiento y
-                                            consiste en una consulta médico-bioquímica virtual de 45 minutos y una
-                                            consulta con nutricionista virtual de 45 minutos.<br/>
-                                            - Seguimiento de complejidad: se realiza en caso necesario y consiste en un
-                                            encuentro médico-bioquímico virtual de 60 minutos y una consulta virtual o
-                                            presencial con nutricionista de 60 minutos.
-                                            <br/>
-                                            Para los análisis específicos se utilizan laboratorios de alta complejidad
-                                            cercanos al paciente o se coordina logística para envío de muestras.<br/>
-                                        </TextoSecundario>
-                                        <Informacion href="/">Completar Formulario</Informacion>
-                                    </ContenedorSecundario>
-                                </div>
+                                <ContenedorSecundario>
+                                <TituloSecundario>Seguimiento</TituloSecundario>
+                                <TextoSecundario>
+                                    El seguimiento se coordina según la necesidad del paciente o la decisión del
+                                    equipo de salud de Metabolom, y puede ser de dos tipos:<br/>
+                                    <br/>
+                                    - Seguimiento general: se realiza a los 90 días de iniciado el tratamiento y
+                                    consiste en una consulta médico-bioquímica virtual de 45 minutos y una
+                                    consulta con nutricionista virtual de 45 minutos.<br/>
+                                    - Seguimiento de complejidad: se realiza en caso necesario y consiste en un
+                                    encuentro médico-bioquímico virtual de 60 minutos y una consulta virtual o
+                                    presencial con nutricionista de 60 minutos.
+                                    <br/>
+                                    Para los análisis específicos se utilizan laboratorios de alta complejidad
+                                    cercanos al paciente o se coordina logística para envío de muestras.<br/>
+                                </TextoSecundario>
+                                <Informacion href="/">Completar Formulario</Informacion>
+                                </ContenedorSecundario>
                             </Carta>
                         ) }
                     </div>
