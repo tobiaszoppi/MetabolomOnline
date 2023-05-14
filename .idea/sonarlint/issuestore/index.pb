@@ -21,8 +21,6 @@ w
 G.idea/sonarlint/issuestore/7/0/7030d0b2f71b999ff89a343de08c414af32fc93a,9\d\9d19eaab4327edc07435a682d68ef383811840e5
 Å
 Q.idea/sonarlint/securityhotspotstore/b/b/bb483293176105de09f814d1404394f1f14ce8d6,8\3\8383c8231a0f522e3e105f32d760b8a03755789a
-A
-src/dev/README.md,a\d\adf7b239b17c79ba453bd0758ea370d771ee5f35
 E
 src/dev/useInitial.js,c\8\c8c2209c7fc4548e384d1a15fda1695a79248ad9
 :
@@ -66,8 +64,6 @@ Q.idea/sonarlint/securityhotspotstore/8/3/8383c8231a0f522e3e105f32d760b8a0375578
 Q.idea/sonarlint/securityhotspotstore/b/5/b588f43f9137535bbb4f469f0e2f9c816156dfe2,7\6\76cb6a72d9d538bfb4a18ebe50756077cbf87097
 Å
 Q.idea/sonarlint/securityhotspotstore/c/d/cdb55fb7b9550cf1c93c03e68dfe3882647e90dc,5\6\5621b8f9ab975e986075060288eda32d9e447df8
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 Å
 Q.idea/sonarlint/securityhotspotstore/9/0/90503f3944c44856e5a8f2657e9eba003f9b4ba9,f\6\f642eed579f2e5dd15c71d7c8a2fe99d52d88c38
 Å
@@ -80,7 +76,3 @@ Q.idea/sonarlint/securityhotspotstore/9/d/9d19eaab4327edc07435a682d68ef383811840
 Q.idea/sonarlint/securityhotspotstore/8/7/87e2c3a83dc597fc0ead43218c432cce50269498,7\8\780232929e191e761627bbfbdc7964eff6b3b1fc
 O
 src/Components/CustomButton.jsx,d\e\de5b883bc20230bd1e16a83117946ee7c934926f
-<
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-D
-src/dev/previews.jsx,b\b\bb483293176105de09f814d1404394f1f14ce8d6

@@ -37,8 +37,9 @@ const Companies = () =>
                         <Typography variant="body2"
                                     sx={ {
                                         color: "rgba(42,42,42,0.68)",
-                                        fontSize: "16px",
-                                        fontWeight: "bold",
+                                        fontSize: "18px",
+                                        fontFamily: "'Hanken Grotesk', sans-serif",
+                                        fontWeight: "500",
                                         backgroundColor: `rgba(255, 255, 255, 0.4)`,
                                         borderRadius: "16px",
                                         boxShadow: "0 4px 30px `rgba(0, 0, 0, 0.1)`",
