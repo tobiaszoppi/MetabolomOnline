@@ -27,15 +27,15 @@ const ImageBox = styled(Button)(
         margin: "0 1%",
         flexGrow: "1",
         flexBasis: 0,
-        transition: "0.5s",
         position: "relative",
+        boxShadow: "20px",
 
         img: {
-            borderRadius: "15px",
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            transition: "0.5s",
+            transition: "0.5s", // Added transition here
+            borderRadius: "15px",
         },
 
         "&::before": {
@@ -44,7 +44,7 @@ const ImageBox = styled(Button)(
             top: "50%",
             left: 0,
             right: 0,
-            bottom: 0,
+            transform: "translateY(-50%)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -65,17 +65,10 @@ const ImageBox = styled(Button)(
             "&::before": {
                 opacity: 1,
             },
-            "& ~ &:not(:hover)": {
-                flexBasis: "25%",
-            },
         },
 
         "&.active": {
             flexBasis: "50%",
-        },
-
-        "&:hover.active": {
-            flexBasis: 0,
         },
 
         "&:nth-child(1):hover": {
@@ -87,18 +80,17 @@ const ImageBox = styled(Button)(
             margin: "2% auto", // Center horizontally
             height: "auto",
             width: "auto",
-            "&:hover, &:hover.active, &:nth-child(1):hover": {
+            "&:hover": {
                 flexBasis: "100%", // Take up full width on hover
             },
             "&::before": {
                 opacity: 1,
                 fontSize: "24px",
+                transition: "0.3s", // Added transition here
             },
         },
     })
 );
-
-
 
 const ImageContent = styled(Box)(
     ( { theme } ) => (
