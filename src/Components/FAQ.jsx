@@ -85,7 +85,7 @@ const FAQ = () =>
                                 <ListItemIcon>
                                     <HelpCenterIcon/>
                                 </ListItemIcon>
-                                <ListItemText primary={ item.question }/>
+                                <ListItemText primary={ item.question } style={{alignContent: "center", textAlign: "center"}}/>
                                 { item.isOpen ? <ExpandLess/> : <ExpandMore/> }
                             </ListItemButton>
                             <Collapse in={ item.isOpen } timeout="auto" unmountOnExit>
