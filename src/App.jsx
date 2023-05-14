@@ -4,12 +4,12 @@ import Guide from "./Components/Guide";
 import Properties from "./Components/Properties";
 
 function App() {
-  return <>
-    <Hero/>
-    <Companies/>
-    <Guide/>
-    <Properties/>
-  </>;
+    return <>
+        <Hero/>
+        <Guide/>
+        <Companies/>
+        <Properties/>
+    </>;
 }
 
 export default App;

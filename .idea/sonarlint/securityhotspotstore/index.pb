@@ -56,8 +56,6 @@ w
 G.idea/sonarlint/issuestore/b/5/b588f43f9137535bbb4f469f0e2f9c816156dfe2,c\7\c7c78a34e7423aed636706b72f75c9f5d1905b2f
 w
 G.idea/sonarlint/issuestore/c/d/cdb55fb7b9550cf1c93c03e68dfe3882647e90dc,8\2\8205d6648fa98b565c1ee51481839d447043a78a
-I
-src/Components/Navbar.jsx,c\7\c7c8479c944bd40a69b32fb47f5bf3decf7b22c1
 w
 G.idea/sonarlint/issuestore/d/8/d8d6ed80113d885fa61c6bfed579fe893566aeb6,4\d\4dd11e52fbfb215851bc355ded31d9b7e0c8b555
 Å

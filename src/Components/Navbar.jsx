@@ -156,7 +156,7 @@ export const Navbar = () => {
                 <CustomButton
                     backgroundColor="#0F1B4C"
                     color="#fff"
-                    buttonText="Register"
+                    buttonText="Registrarse"
                 />
             </Box>
         </NavbarContainer>

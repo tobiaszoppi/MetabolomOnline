@@ -84,5 +84,3 @@ O
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 D
 src/dev/previews.jsx,b\b\bb483293176105de09f814d1404394f1f14ce8d6
-I
-src/Components/Navbar.jsx,c\7\c7c8479c944bd40a69b32fb47f5bf3decf7b22c1
