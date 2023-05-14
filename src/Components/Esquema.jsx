@@ -20,6 +20,7 @@ const CustomBox = styled(Box)(
                 justifyContent: "center",
                 alignItems: "center",
                 alignContent: "center",
+                padding:0,
             },
             [ theme.breakpoints.down("sm") ]: {
                 maxWidth: "100%",
@@ -103,6 +104,11 @@ const Carta = styled(Box)(
             },
             [ theme.breakpoints.down("md") ]: {
                 padding: theme.spacing(4),
+                justifyContent: "center",
+                flexDirection: "column",
+            },
+            [ theme.breakpoints.down("md") ]: {
+                padding: 0,
                 justifyContent: "center",
                 flexDirection: "column",
             },

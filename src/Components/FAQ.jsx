@@ -7,15 +7,19 @@ import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 const CustomBox = styled(Box)(
     ( { theme } ) => (
         {
+            width: "100%",
+            margin:"auto",
             mb: 2,
             backgroundColor: "#E6F0FF",
             padding: theme.spacing(4, 5, 2, 0),
             textAlign: "center",
-            width: "100%",
             "a": {
                 display: "inline-block",
                 marginTop: "2rem",
             },
+            [theme.breakpoints.down("md")]: {
+                padding: 0,
+            }
         }
     ));
 
