@@ -4,11 +4,32 @@ import logoImg from "../media/metabolomLogoTexto.png";
 import logosImg from "../media/logos.png";
 import manosChicoImg from "../media/hermanosJugandoImg.jpg";
 
+const CustomBox = styled(Container)(
+    ( { theme, img } ) => (
+        {
+            minWidth: "100%",
+            backgroundImage: `url(${ img })`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            [ theme.breakpoints.down("sm") ]: {
+                backgroundPositionX: "-300px",
+            },
+        }
+    ));
+
 const CustomContainer = styled(Container)(
     ( { theme } ) => (
         {
             display: "flex",
+            flexDirection: "column",
             justifyContent: "space-between",
+
+            "img": {
+                maxWidth: "30%",
+                minWidth: "200px",
+                marginTop: "20px"
+            },
+
             [ theme.breakpoints.down("md") ]: {
                 flexDirection: "column",
                 alignItems: "center",
@@ -17,26 +38,31 @@ const CustomContainer = styled(Container)(
         }
     ));
 
+const CustomTypografy  = styled(Typography)(
+    ( { theme } ) => (
+        {
+            color: "rgba(42,42,42,0.68)",
+            fontSize: "18px",
+            fontFamily: "'Hanken Grotesk', sans-serif",
+            fontWeight: "500",
+            backgroundColor: `rgba(255, 255, 255, 0.4)`,
+            borderRadius: "16px",
+            boxShadow: "0 4px 30px `rgba(0, 0, 0, 0.1)`",
+            backdropFilter: `blur(5px)`,
+            webkitBackdropFilter: `blur(5px)`,
+            border: "1px solid `rgba(255, 255, 255, 0.3)`",
+            padding: "15px",
+        }
+    ));
+
 const Companies = () =>
     {
         return (
-            <Box sx={ { backgroundImage: `url(${ manosChicoImg })`, backgroundSize: "cover", backgroundRepeat: "no-repeat" } }>
+            <CustomBox img={ manosChicoImg }>
                 <CustomContainer>
-
-                        <img src={ logoImg } alt="logo" style={ { maxWidth: "30%", minWidth: "200px", marginTop: "20px" } }/>
-                        <Typography variant="body2"
+                        <img src={ logoImg } alt="logo"/>
+                        <CustomTypografy variant="body2"
                                     sx={ {
-                                        color: "rgba(42,42,42,0.68)",
-                                        fontSize: "18px",
-                                        fontFamily: "'Hanken Grotesk', sans-serif",
-                                        fontWeight: "500",
-                                        backgroundColor: `rgba(255, 255, 255, 0.4)`,
-                                        borderRadius: "16px",
-                                        boxShadow: "0 4px 30px `rgba(0, 0, 0, 0.1)`",
-                                        backdropFilter: `blur(5px)`,
-                                        webkitBackdropFilter: `blur(5px)`,
-                                        border: "1px solid `rgba(255, 255, 255, 0.3)`",
-                                        padding: "15px",
                                         mb: 10,
                                         mt: 5
                                     } }>
@@ -45,12 +71,12 @@ const Companies = () =>
                             Mediante el estudio de análisis específicos y personalizados y la integración con el control clínico, investigamos hasta llegar al Diagnóstico de la condición o patología.<br></br>
                             Se estudian casos del espectro autista, trastornos del desarrollo, celiaquía, intolerancia a los alimentos, alergias específicas, dermatitis, enfermedades metabólicas congénitas, disbiosis.<br></br>
                             Los encuentros se realizan con el tutor del menor y en algunos casos pueden solicitarse fotos del mismo para explicar alguna situación clínica en particular.
-                        </Typography>
+                        </CustomTypografy>
 
                 </CustomContainer>
 
 
-            </Box>
+            </CustomBox>
         )
     };
 

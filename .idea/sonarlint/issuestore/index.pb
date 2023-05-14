@@ -74,5 +74,3 @@ Q.idea/sonarlint/securityhotspotstore/d/8/d8d6ed80113d885fa61c6bfed579fe893566ae
 Q.idea/sonarlint/securityhotspotstore/9/d/9d19eaab4327edc07435a682d68ef383811840e5,0\5\05ab750dbd0e11b58c2d57a6390647bee6c3f329
 Å
 Q.idea/sonarlint/securityhotspotstore/8/7/87e2c3a83dc597fc0ead43218c432cce50269498,7\8\780232929e191e761627bbfbdc7964eff6b3b1fc
-O
-src/Components/CustomButton.jsx,d\e\de5b883bc20230bd1e16a83117946ee7c934926f

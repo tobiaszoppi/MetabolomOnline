@@ -8,7 +8,7 @@ import pediatry2Img from "../media/chicaYDoctoraImg.jpg";
 const Gallery = styled(Box)(
     ( { theme } ) => (
         {
-            height: "80vh",
+            height: "65vh",
             width: "100%",
             display: "flex",
             margin: "2% auto 0",
@@ -50,7 +50,7 @@ const ImageBox = styled(Button)(
             justifyContent: "center",
             backgroundColor: "rgba(255, 255, 255, 0.1)",
             textAlign: "center",
-            fontSize: "60px",
+            fontSize: "1px",
             color: "rgba(100, 255, 255, 0.7)",
             fontFamily: "'Hanken Grotesk', sans-serif",
             fontWeight: "900",
@@ -64,6 +64,7 @@ const ImageBox = styled(Button)(
             flexBasis: "50%",
             "&::before": {
                 opacity: 1,
+                fontSize: "60px",
             },
         },
 

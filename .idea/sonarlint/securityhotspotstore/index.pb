@@ -58,8 +58,6 @@ w
 G.idea/sonarlint/issuestore/d/8/d8d6ed80113d885fa61c6bfed579fe893566aeb6,4\d\4dd11e52fbfb215851bc355ded31d9b7e0c8b555
 Å
 Q.idea/sonarlint/securityhotspotstore/1/9/19729f78e3015a9c538e20a12daaa360b5d674d4,e\8\e8ef396047a7eca77034b631c6f9f6e0849d99b2
-O
-src/Components/CustomButton.jsx,d\e\de5b883bc20230bd1e16a83117946ee7c934926f
 Å
 Q.idea/sonarlint/securityhotspotstore/8/3/8383c8231a0f522e3e105f32d760b8a03755789a,7\1\7184fedd6f2e3f285bb609a6342f076345302ccb
 Å
