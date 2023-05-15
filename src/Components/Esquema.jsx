@@ -1,49 +1,8 @@
 import React, {useState} from 'react';
-import {Box, styled, Typography} from "@mui/material";
+import {Box, Container, styled, Typography} from "@mui/material";
 import Ilustracion1 from "../media/illustration-features-tab-1.svg";
 import Ilustracion2 from "../media/illustration-features-tab-2.svg";
 import Ilustracion3 from "../media/illustration-features-tab-3.svg";
-
-const CustomBox = styled(Box)(
-    ( { theme } ) => (
-        {
-            maxWidth: "100%",
-            padding: "1rem",
-
-            marginTop: "2rem",
-            backgroundColor: "white",
-            borderTopLeftRadius: "55px",
-            borderTopRightRadius: "55px",
-            boxShadow: "0 0 6px rgba(0, 0, 0, 0.2)",
-
-            [ theme.breakpoints.down("md") ]: {
-
-                justifyContent: "center",
-                alignItems: "center",
-                alignContent: "center",
-                padding:0,
-            },
-            [ theme.breakpoints.down("sm") ]: {
-                maxWidth: "100%",
-            }
-        }
-    ));
-
-const CustomBox2 = styled(Box)(
-    ( { theme } ) => (
-        {
-            paddingBottom: "2rem",
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            gap: theme.spacing(5),
-            [ theme.breakpoints.down("md") ]: {
-                flexDirection: "column",
-                alignItems: "center",
-                textAlign: "center",
-            },
-        }
-    ));
 
 const Titulo = styled(Typography)(
     ( { theme } ) => (
@@ -197,8 +156,7 @@ const Esquema = () =>
     {
         const [option, setOption] = useState("1");
         return (
-            <CustomBox>
-                <CustomBox2>
+                <Container sx={{paddingTop: "2rem", paddingBottom: "1rem", backgroundColor: "#fff", borderTopRightRadius: "20px", borderTopLeftRadius: "20px" }}>
                     <Titulo>Esquema de Trabajo</Titulo>
                     <Texto variant="body2">
                         Nuestro objetivo es ofrecerle un servicio integral y personalizado para mejorar su salud y
@@ -290,8 +248,7 @@ const Esquema = () =>
                             </Carta>
                         ) }
                     </div>
-                </CustomBox2>
-            </CustomBox>
+                </Container>
         );
     }
 export default Esquema;

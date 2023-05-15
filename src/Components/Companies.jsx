@@ -10,6 +10,7 @@ const CustomBox = styled(Container)(
             backgroundImage: `url(${ img })`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
+            backgroundPositionY: "-200px",
             borderBottomRightRadius: "25px",
             borderBottomLeftRadius: "25px",
             [ theme.breakpoints.down("sm") ]: {
@@ -28,7 +29,13 @@ const CustomContainer = styled(Container)(
             "img": {
                 maxWidth: "30%",
                 minWidth: "200px",
-                marginTop: "20px"
+                marginTop: "20px",
+                backgroundColor: `rgba(255, 255, 255, 0.4)`,
+                borderRadius: "16px",
+                boxShadow: "0 4px 30px `rgba(0, 0, 0, 0.1)`",
+                backdropFilter: `blur(5px)`,
+                webkitBackdropFilter: `blur(5px)`,
+                border: "1px solid `rgba(255, 255, 255, 0.3)`",
             },
 
             [ theme.breakpoints.down("md") ]: {
