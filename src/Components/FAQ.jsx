@@ -1,14 +1,22 @@
 import React from 'react';
-import {Box, Collapse, List, ListItemButton, ListItemIcon, ListItemText, styled, Typography} from "@mui/material";
+import {
+    Box,
+    Collapse,
+    Container,
+    List,
+    ListItemButton,
+    ListItemIcon,
+    ListItemText,
+    styled,
+    Typography
+} from "@mui/material";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import HelpCenterIcon from '@mui/icons-material/HelpCenter';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 
-const CustomBox = styled(Box)(
+const CustomBox = styled(Container)(
     ( { theme } ) => (
         {
-            width: "80%",
-            margin: "auto",
             mb: 2,
             backgroundColor: "#E6F0FF",
             textAlign: "center",

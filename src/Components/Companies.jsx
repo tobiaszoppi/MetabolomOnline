@@ -6,11 +6,9 @@ import manosChicoImg from "../media/hermanosJugandoImg.jpg";
 const CustomBox = styled(Container)(
     ( { theme, img } ) => (
         {
-            minWidth: "100%",
             backgroundImage: `url(${ img })`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "-200px",
             borderBottomRightRadius: "25px",
             borderBottomLeftRadius: "25px",
             [ theme.breakpoints.down("sm") ]: {
@@ -81,7 +79,6 @@ const Companies = () =>
                         Los encuentros se realizan con el tutor del menor y en algunos casos pueden solicitarse fotos
                         del mismo para explicar alguna situación clínica en particular.
                     </CustomTypografy>
-
                 </CustomContainer>
 
 
