@@ -1,7 +1,7 @@
 import Hero from "./Components/Hero";
 import Companies from "./Components/Companies";
 import Guide from "./Components/Guide";
-import Properties from "./Components/Properties";
+import Services from "./Components/Services/Services";
 import Esquema from "./Components/Esquema";
 
 import FAQ from "./Components/FAQ";
@@ -14,7 +14,7 @@ function App() {
         <Esquema/>
         <Companies/>
         <FAQ/>
-        <Properties/>
+        <Services/>
         <Formulario/>
     </>;
 }

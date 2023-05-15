@@ -1,6 +1,4 @@
 
-@
-src/dev/index.js,6\6\6629e821eb1fc148dc019c1fd774ba7dea6f3712
 C
 src/dev/palette.jsx,8\f\8f15683c22445a28ef31e645fd2a71337720a825
 Å
@@ -162,8 +160,6 @@ A
 src/properties.js,b\3\b33916aae4a8abbd748e9c3ddc1e95be97253803
 I
 src/Components/Navbar.jsx,c\7\c7c8479c944bd40a69b32fb47f5bf3decf7b22c1
-=
-src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
 A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 Y
@@ -180,8 +176,6 @@ M
 src/Components/uploadFile.jsx,b\6\b65ad3e9fd5cb23ccdcfc93f25a076d09b792de8
 J
 src/Components/Details.jsx,f\9\f9e0f1737defc7c980d787c9fee5fdc92771d81a
-L
-src/Components/Companies.jsx,c\c\ccfec423fa1da6c4a1b323d3aa1f3f59d61d70f6
 O
 src/Components/CustomButton.jsx,d\e\de5b883bc20230bd1e16a83117946ee7c934926f
 D

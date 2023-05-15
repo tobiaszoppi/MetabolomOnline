@@ -7,18 +7,20 @@ import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 const CustomBox = styled(Box)(
     ( { theme } ) => (
         {
-            width: "100%",
-            margin:"auto",
+            width: "80%",
             mb: 2,
             backgroundColor: "#E6F0FF",
-            padding: theme.spacing(4, 5, 2, 0),
             textAlign: "center",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
             "a": {
                 display: "inline-block",
                 marginTop: "2rem",
             },
             [theme.breakpoints.down("md")]: {
                 padding: 0,
+                width: "100%",
             }
         }
     ));

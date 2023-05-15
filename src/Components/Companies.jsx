@@ -1,7 +1,6 @@
-import {Box, Container, styled, Typography} from "@mui/material";
+import {Container, styled, Typography} from "@mui/material";
 import React from "react";
 import logoImg from "../media/metabolomLogoTexto.png";
-import logosImg from "../media/logos.png";
 import manosChicoImg from "../media/hermanosJugandoImg.jpg";
 
 const CustomBox = styled(Container)(
@@ -11,6 +10,8 @@ const CustomBox = styled(Container)(
             backgroundImage: `url(${ img })`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
+            borderBottomRightRadius: "25px",
+            borderBottomLeftRadius: "25px",
             [ theme.breakpoints.down("sm") ]: {
                 backgroundPositionX: "-300px",
             },
@@ -38,7 +39,7 @@ const CustomContainer = styled(Container)(
         }
     ));
 
-const CustomTypografy  = styled(Typography)(
+const CustomTypografy = styled(Typography)(
     ( { theme } ) => (
         {
             color: "rgba(42,42,42,0.68)",
@@ -60,18 +61,25 @@ const Companies = () =>
         return (
             <CustomBox img={ manosChicoImg }>
                 <CustomContainer>
-                        <img src={ logoImg } alt="logo"/>
-                        <CustomTypografy variant="body2"
-                                    sx={ {
-                                        mb: 10,
-                                        mt: 5
-                                    } }>
-                            Metabolom brinda un servicio multidisciplinario bioquímico-médico-nutricionista para la investigación y diagnóstico de Enfermedades Metabólicas Congénitas y Adquiridas en pacientes neonatos, niños y adultos.<br></br>
-                            En Metabolom trabajamos en equipo multidisciplinario para mejorar la calidad de vida y el desarrollo de los niños.<br></br>
-                            Mediante el estudio de análisis específicos y personalizados y la integración con el control clínico, investigamos hasta llegar al Diagnóstico de la condición o patología.<br></br>
-                            Se estudian casos del espectro autista, trastornos del desarrollo, celiaquía, intolerancia a los alimentos, alergias específicas, dermatitis, enfermedades metabólicas congénitas, disbiosis.<br></br>
-                            Los encuentros se realizan con el tutor del menor y en algunos casos pueden solicitarse fotos del mismo para explicar alguna situación clínica en particular.
-                        </CustomTypografy>
+                    <img src={ logoImg } alt="logo"/>
+                    <CustomTypografy variant="body2"
+                                     sx={ {
+                                         mb: 10,
+                                         mt: 5
+                                     } }>
+                        Metabolom brinda un servicio multidisciplinario bioquímico-médico-nutricionista para la
+                        investigación y diagnóstico de Enfermedades Metabólicas Congénitas y Adquiridas en pacientes
+                        neonatos, niños y adultos.<br></br>
+                        En Metabolom trabajamos en equipo multidisciplinario para mejorar la calidad de vida y el
+                        desarrollo de los niños.<br></br>
+                        Mediante el estudio de análisis específicos y personalizados y la integración con el control
+                        clínico, investigamos hasta llegar al Diagnóstico de la condición o patología.<br></br>
+                        Se estudian casos del espectro autista, trastornos del desarrollo, celiaquía, intolerancia a los
+                        alimentos, alergias específicas, dermatitis, enfermedades metabólicas congénitas,
+                        disbiosis.<br></br>
+                        Los encuentros se realizan con el tutor del menor y en algunos casos pueden solicitarse fotos
+                        del mismo para explicar alguna situación clínica en particular.
+                    </CustomTypografy>
 
                 </CustomContainer>
 

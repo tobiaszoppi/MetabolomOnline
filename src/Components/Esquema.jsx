@@ -9,14 +9,15 @@ const CustomBox = styled(Box)(
         {
             maxWidth: "100%",
             padding: "1rem",
-            margin: theme.spacing(4, 3, 4, 3),
+
             marginTop: "2rem",
             backgroundColor: "white",
-            borderRadius: "15px",
+            borderTopLeftRadius: "55px",
+            borderTopRightRadius: "55px",
             boxShadow: "0 0 6px rgba(0, 0, 0, 0.2)",
 
             [ theme.breakpoints.down("md") ]: {
-                margin: theme.spacing(4, 3, 4, 3),
+
                 justifyContent: "center",
                 alignItems: "center",
                 alignContent: "center",

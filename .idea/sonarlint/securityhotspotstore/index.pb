@@ -1,6 +1,4 @@
 
-@
-src/dev/index.js,6\6\6629e821eb1fc148dc019c1fd774ba7dea6f3712
 C
 src/dev/palette.jsx,8\f\8f15683c22445a28ef31e645fd2a71337720a825
 E
@@ -162,8 +160,6 @@ A
 src/properties.js,b\3\b33916aae4a8abbd748e9c3ddc1e95be97253803
 I
 src/Components/Navbar.jsx,c\7\c7c8479c944bd40a69b32fb47f5bf3decf7b22c1
-=
-src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
 Y
 )src/media/illustration-features-tab-3.svg,9\9\990f9a0f90882024d957cf9293bc82174d5f0071
 Y
@@ -184,5 +180,3 @@ D
 src/dev/previews.jsx,b\b\bb483293176105de09f814d1404394f1f14ce8d6
 O
 src/Components/CustomButton.jsx,d\e\de5b883bc20230bd1e16a83117946ee7c934926f
-L
-src/Components/Companies.jsx,c\c\ccfec423fa1da6c4a1b323d3aa1f3f59d61d70f6
