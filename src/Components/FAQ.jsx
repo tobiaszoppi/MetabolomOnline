@@ -8,6 +8,7 @@ const CustomBox = styled(Box)(
     ( { theme } ) => (
         {
             width: "80%",
+            margin: "auto",
             mb: 2,
             backgroundColor: "#E6F0FF",
             textAlign: "center",
@@ -84,7 +85,7 @@ const FAQ = () =>
                     puede sentirse comodo de contactarse con nosotros.
                 </CustomText>
 
-                <List sx={ { width: "100%" } } component="div">
+                <List sx={ { width: "100%"} } component="div">
                     { items.map(( item, index ) => (
                         <React.Fragment key={ index }>
                             <ListItemButton onClick={ () => toggleItem(index) }>
