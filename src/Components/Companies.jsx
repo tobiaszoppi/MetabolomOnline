@@ -27,15 +27,9 @@ const CustomContainer = styled(Container)(
             justifyContent: "space-between",
 
             "img": {
-                maxWidth: "30%",
+                maxWidth: "20%",
                 minWidth: "200px",
                 marginTop: "20px",
-                backgroundColor: `rgba(255, 255, 255, 0.4)`,
-                borderRadius: "16px",
-                boxShadow: "0 4px 30px `rgba(0, 0, 0, 0.1)`",
-                backdropFilter: `blur(5px)`,
-                webkitBackdropFilter: `blur(5px)`,
-                border: "1px solid `rgba(255, 255, 255, 0.3)`",
             },
 
             [ theme.breakpoints.down("md") ]: {
