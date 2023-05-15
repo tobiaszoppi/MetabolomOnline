@@ -50,7 +50,7 @@ const FAQ = () =>
     {
         const [items, setItems] = React.useState([
             {
-                question: "¿Que es Metabolom Online?",
+                question: "¿Qué es Metabolom Online?",
                 answer:
                     "Metabolom es una clínica médica que ofrece un servicio integral para el estudio y tratamiento de las enfermedades metabólicas congénitas y adquiridas en pacientes de todas las edades. Cuenta con un equipo de profesionales especializados en bioquímica, medicina y nutrición que analizan los metabolitos presentes en el organismo, que son las pequeñas moléculas que se generan al metabolizar sustancias químicas, alimentos o tejidos. Estos metabolitos reflejan la interacción entre el genoma y el ambiente y pueden indicar el riesgo de padecer ciertas enfermedades o la causa de los síntomas. Metabolom propone un enfoque diferente a la medicina tradicional, observando al individuo completo y todos sus sistemas orgánicos interrelacionados.",
                 isOpen: true,
@@ -81,8 +81,8 @@ const FAQ = () =>
             <CustomBox>
                 <CustomTitle>Preguntas Frecuentes</CustomTitle>
                 <CustomText>
-                    Aqui hay algunas preguntas frecuentemente hechas. Si quisiera hacer alguna otra pregunta,
-                    puede sentirse comodo de contactarse con nosotros.
+                    Aquí hay algunas preguntas frecuentemente hechas. Si quisiera hacer alguna otra pregunta,
+                    puede sentirse cómodo de contactarse con nosotros.
                 </CustomText>
 
                 <List sx={ { width: "100%"} } component="div">

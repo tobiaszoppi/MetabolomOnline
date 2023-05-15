@@ -188,7 +188,7 @@ const Informacion = styled("a")(
             fontSize: "1rem",
             padding: theme.spacing(0.7),
             "&:hover": {
-                color: "hsl(231, 69%, 60%)",
+                color: "hsla(0,0%,0%,0.4)",
             },
         }
     ));
@@ -221,7 +221,7 @@ const Esquema = () =>
                                     <img src={ Ilustracion1 } alt="features"/>
                                 </Imagen>
                                 <ContenedorSecundario>
-                                    <TituloSecundario>Envio y Evaluacion de Antecedentes</TituloSecundario>
+                                    <TituloSecundario>Envió y Evaluación de Antecedentes</TituloSecundario>
                                     <TextoSecundario>
                                         Para iniciar el tratamiento en Metabolom, el paciente debe completar y enviar el
                                         formulario que se encuentra al final de esta página.<br/>
@@ -242,10 +242,10 @@ const Esquema = () =>
                                     <img src={ Ilustracion2 } alt="features"/>
                                 </Imagen>
                                 <ContenedorSecundario>
-                                <TituloSecundario>Diagnostico de Resultados y Acompañamiento del
+                                <TituloSecundario>Diagnóstico de Resultados y Acompañamiento del
                                     Paciente</TituloSecundario>
                                 <TextoSecundario>
-                                    Luego de la evaluacion inicial, le ofrecemos un diagnostico de resultados y
+                                    Luego de la evaluación inicial, le ofrecemos un diagnóstico de resultados y
                                     un
                                     acompañamiento.<br/>
                                     Esto implica:<br/>

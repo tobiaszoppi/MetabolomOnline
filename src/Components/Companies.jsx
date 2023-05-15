@@ -76,7 +76,7 @@ const Companies = () =>
                         clínico, investigamos hasta llegar al Diagnóstico de la condición o patología.<br></br>
                         Se estudian casos del espectro autista, trastornos del desarrollo, celiaquía, intolerancia a los
                         alimentos, alergias específicas, dermatitis, enfermedades metabólicas congénitas,
-                        disbiosis.<br></br>
+                        simbiosis.<br></br>
                         Los encuentros se realizan con el tutor del menor y en algunos casos pueden solicitarse fotos
                         del mismo para explicar alguna situación clínica en particular.
                     </CustomTypografy>

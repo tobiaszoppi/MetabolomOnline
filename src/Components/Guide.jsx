@@ -80,7 +80,7 @@ const Guide = () =>
                     color: "#000339",
                     my: 3
                 } }>
-                    Cuales son los pasos?
+                    ¿Cuáles son los pasos?
                 </Typography>
 
                 <CustomBox>
@@ -90,7 +90,7 @@ const Guide = () =>
                         color: "#5A6473",
                         textAlign: "center"
                     } }>
-                        Todo lo que necesitas saber para realizar una consulta virtual en Metabolom!
+                        ¡Todo lo que necesitas saber para realizar una consulta virtual en Metabolom!
                     </Typography>
                 </CustomBox>
 
@@ -130,7 +130,7 @@ const Guide = () =>
                             color: "#3B3c45",
                             my: 1
                         } }>
-                            Verificacion de Datos Personales y Antecedentes Clinicos
+                            Verificación de Datos Personales y Antecedentes Clínicos
                         </Typography>
                         <Box sx={ {
                             cursor: "pointer",
