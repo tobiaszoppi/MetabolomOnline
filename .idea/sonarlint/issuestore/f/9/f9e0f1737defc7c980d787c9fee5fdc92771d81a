@@ -1,0 +1,15 @@
+
+Ejavascript:S1128")Remove this unused import of 'Container'.(ï«ùö
+Jjavascript:S1128")Remove this unused import of 'houseCard'.( äåúÿÿÿÿ
+[javascript:S1481":Remove the declaration of the unused 'CustomBox' variable.(Ë¬úÁıÿÿÿÿ
+Xjavascript:S1854"7Remove this useless assignment to variable "CustomBox".(Ë¬úÁıÿÿÿÿ
+^javascript:S1481	"=Remove the declaration of the unused 'ImgContainer' variable.(±„Ğğıÿÿÿÿ
+[javascript:S1854	":Remove this useless assignment to variable "ImgContainer".(±„Ğğıÿÿÿÿ
+[javascript:S1481":Remove the declaration of the unused 'LargeText' variable.( Ÿ”¶úÿÿÿÿ
+Xjavascript:S1854"7Remove this useless assignment to variable "LargeText".( Ÿ”¶úÿÿÿÿ
+Vjavascript:S1481":Remove the declaration of the unused 'SmallText' variable.(™Á†Ô
+Sjavascript:S1854"7Remove this useless assignment to variable "SmallText".(™Á†Ô
+]javascript:S1481"<Remove the declaration of the unused 'TextFlexbox' variable.(·š©úÿÿÿÿ
+Zjavascript:S1854"9Remove this useless assignment to variable "TextFlexbox".(·š©úÿÿÿÿ
+Yjavascript:S1481"8Remove the declaration of the unused 'Divider' variable.(™Äø–ùÿÿÿÿ
+Vjavascript:S1854"5Remove this useless assignment to variable "Divider".(™Äø–ùÿÿÿÿ

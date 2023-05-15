@@ -3,8 +3,9 @@ import Companies from "./Components/Companies";
 import Guide from "./Components/Guide";
 import Properties from "./Components/Properties";
 import Esquema from "./Components/Esquema";
-import Formulario from "./Components/Formulario";
+
 import FAQ from "./Components/FAQ";
+import Formulario from "./Components/formulario/Formulario";
 
 function App() {
     return <>
