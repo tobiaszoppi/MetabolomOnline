@@ -8,7 +8,6 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import logoImg from "../media/metabolomLogoTexto.png";
-import {Container} from "@mui/system";
 import CustomButton from "./CustomButton";
 import {
     Drawer,
@@ -89,19 +88,19 @@ export const Navbar = () => {
     const CustomMenuIcon = styled(MenuIcon)(({theme}) => ({
         cursor: "pointer",
         display: "none",
-        marginRight: theme.spacing(2),
+        margin: theme.spacing(2,0,2,0),
         [theme.breakpoints.down("md")]: {
             display: "block",
         },
     }));
 
-    const NavbarContainer = styled(Container)(({theme}) => ({
+    const NavbarContainer = styled(Box)(({theme}) => ({
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: theme.spacing(5),
+        padding: theme.spacing(5,0,5,0),
         [theme.breakpoints.down("md")]: {
-            padding: theme.spacing(2),
+            padding: theme.spacing(2,0,2,0),
         },
     }));
 
