@@ -13,7 +13,7 @@ const Hero = () =>
                 {
                     display: "flex",
                     justifyContent: "center",
-                    gap: theme.spacing(5),
+                    gap: theme.spacing(10),
                     [ theme.breakpoints.down("md") ]: {
                         flexDirection: "column",
                         alignItems: "center",

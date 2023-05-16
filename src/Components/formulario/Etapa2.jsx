@@ -85,7 +85,7 @@ const Etapa2 = ( { datosEtapa2, manejarCambioEtapa2, volverEtapa1, manejarEnviar
                             </div>
                         )) }
                     </div>
-                    <button onClick={ volverEtapa1 }>Volver a la Etapa 1</button>
+                    <button onClick={ volverEtapa1 }>Atras</button>
                     <button onClick={ manejarEnviarFormulario }>Enviar Formulario</button>
                 </div>
             </div>

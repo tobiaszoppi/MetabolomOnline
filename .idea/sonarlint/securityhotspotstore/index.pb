@@ -134,24 +134,16 @@ A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 Y
 )src/media/illustration-features-tab-2.svg,8\e\8e5ab9bc890f281e356ab1086ab9f6ab355243b4
-M
-src/Components/uploadFile.jsx,b\6\b65ad3e9fd5cb23ccdcfc93f25a076d09b792de8
 A
 src/dev/README.md,a\d\adf7b239b17c79ba453bd0758ea370d771ee5f35
-J
-src/Components/Details.jsx,f\9\f9e0f1737defc7c980d787c9fee5fdc92771d81a
 D
 src/dev/previews.jsx,b\b\bb483293176105de09f814d1404394f1f14ce8d6
-O
-src/Components/CustomButton.jsx,d\e\de5b883bc20230bd1e16a83117946ee7c934926f
 H
 src/Components/House.jsx,8\4\84adbcf649d241238e690b57c5faaf6fdd017c35
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 
 Q.idea/sonarlint/securityhotspotstore/1/5/1514f63100ab8c5d89d023270e4973acca74ffe4,1\0\10fdb03543a8af07f057347ed34d0c5bf15ce8af
-T
-$src/Components/formulario/Etapa2.jsx,6\6\66f199cb775bf2b75826591c9b08781f5d99eb70
 w
 G.idea/sonarlint/issuestore/9/0/90c17c7993cccfb7fe2f12809a710c2c0663a13e,3\6\368670f2bd73d7e8266f7a037d1b534eecc77d52
 X
@@ -392,12 +384,8 @@ G.idea/sonarlint/issuestore/8/e/8e5ab9bc890f281e356ab1086ab9f6ab355243b4,5\c\5c
 Q.idea/sonarlint/securityhotspotstore/1/2/12cd45ce31b71888a52487300c646f5854e42fe0,1\d\1d87796498a672758ed0127a132a5a2a907c61a6
 
 Q.idea/sonarlint/securityhotspotstore/1/4/14f37775e0c4d112e1fe514717763fbd425c337e,8\f\8f3ff4e1351cf4b1468afd8e58074e085f8524c4
-T
-$src/Components/formulario/Etapa1.jsx,1\8\18bde179a004c9a76ae727d5df4ff2b77e196182
 @
 src/dev/index.js,6\6\6629e821eb1fc148dc019c1fd774ba7dea6f3712
-H
-src/Components/Guide.jsx,d\5\d51814fc0ebfe57d0e6872b83723076228976bf0
 \
 ,src/Components/Profesionals/Profesionals.jsx,c\b\cb2c72639a92f29c116a43a421c34434f5b118e0
 \

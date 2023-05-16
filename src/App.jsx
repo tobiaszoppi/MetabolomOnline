@@ -7,15 +7,17 @@ import Esquema from "./Components/Esquema";
 import FAQ from "./Components/FAQ";
 import Formulario from "./Components/formulario/Formulario";
 import Footer from "./Components/Footer";
+import Profesionales from "./Components/profesionales/Profesionales";
 
 function App() {
     return <>
         <Hero/>
         <Guide/>
+        <Services/>
+        <Profesionales/>
         <Esquema/>
         <Companies/>
         <FAQ/>
-        <Services/>
         <Formulario/>
         <Footer/>
     </>;

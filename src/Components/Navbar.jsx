@@ -99,6 +99,7 @@ export const Navbar = () => {
         alignItems: "center",
         justifyContent: "space-between",
         padding: theme.spacing(5,0,5,0),
+        gap: "5px",
         [theme.breakpoints.down("md")]: {
             padding: theme.spacing(2,0,2,0),
         },
@@ -148,16 +149,15 @@ export const Navbar = () => {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    gap: "1rem",
                 }}
             >
-                <NavLink variant="body2">Iniciar Sesion</NavLink>
                 <CustomButton
                     backgroundColor="#0F1B4C"
                     color="#fff"
-                    buttonText="Registrarse"
+                    buttonText="Seguimiento de Consulta"
                 />
             </Box>
+
         </NavbarContainer>
     );
 };

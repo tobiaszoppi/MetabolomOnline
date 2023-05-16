@@ -116,7 +116,7 @@ const Guide = () =>
                                 fontSize: "14px",
                                 color: "#0689FF"
                             } }>
-                                Ver formulario de consulta
+                                Ver Formulario de Consulta
                             </Typography>
                             <ArrowRightAltIcon style={ { color: "#0689FF" } }/>
                         </Box>
@@ -143,7 +143,7 @@ const Guide = () =>
                                 fontSize: "14px",
                                 color: "#0689FF"
                             } }>
-                                Consultar Mi Solicitud
+                                Consultar mi Solicitud
                             </Typography>
                             <ArrowRightAltIcon style={ { color: "#0689FF" } }/>
                         </Box>
@@ -170,7 +170,7 @@ const Guide = () =>
                                 fontSize: "14px",
                                 color: "#0689FF"
                             } }>
-                                Consultar Mi Solicitud
+                                Seguimiento de mi Consulta
                             </Typography>
                             <ArrowRightAltIcon style={ { color: "#0689FF" } }/>
                         </Box>
