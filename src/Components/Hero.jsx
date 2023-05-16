@@ -52,7 +52,7 @@ const Hero = () =>
                                 Metabolom Online
                             </Typography>
                             <Title variant="h1">
-                                ¡Obtenga la atención que necesita al alcance de un clic!
+                                Estudiamos tu salud desde todos los ángulos.
                             </Title>
                             <Typography
                                 variant="body2"
