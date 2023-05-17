@@ -7,8 +7,9 @@
 }
 
 .contenedor h2 {
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 700;
+    color: #000339;
+    font-size: 35px;
     margin-bottom: 12px;
     border-bottom: 5px solid rgba(0,186,255,0.2);
 }

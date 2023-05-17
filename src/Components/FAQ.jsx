@@ -38,7 +38,9 @@ const CustomTitle = styled(Typography)(
     ( { theme } ) => (
         {
             fontFamily: "'Hanken Grotesk', sans-serif",
-            fontSize: "1.8rem",
+            fontSize: "35px",
+            color: "#000339",
+            fontWeight: "700",
             textAlign: "center",
         }
     ));

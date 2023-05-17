@@ -2,8 +2,9 @@
     width: fit-content;
     margin: auto;
     border-bottom: 5px solid rgba(0,186,255,0.2);
-    font-weight: 400;
-    font-size: 32px;
+    color: #000339;
+    font-weight: 800;
+    font-size: 35px;
 }
 
 .card {
@@ -14,10 +15,11 @@
     border-radius: 20px;
     box-shadow: 6px 4.5px 3.5px 0 #dddddd;
     padding: 10px;
+    transition: transform 0.3s ease;
 }
 
-.card-image-container {
-
+.card.hovered {
+    transform: translateY(-10px);
 }
 
 .card-image {
