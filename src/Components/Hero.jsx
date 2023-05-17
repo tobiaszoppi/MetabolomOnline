@@ -1,5 +1,6 @@
 import {Box, Button, styled, Typography} from "@mui/material";
 import {Container} from "@mui/system";
+import { Link as ScrollLink } from 'react-scroll';
 import React from "react";
 import Navbar from "./Navbar";
 
@@ -36,7 +37,7 @@ const Hero = () =>
             ));
 
         return (
-            <Box sx={ {mb: 2, backgroundColor: "#E6F0FF", minHeight: "80vh" } }>
+            <Box id={"Inicio"} sx={ {mb: 2, backgroundColor: "#E6F0FF", minHeight: "80vh" } } >
                 <Container>
                     <Navbar/>
                     <CustomBox>
@@ -64,12 +65,18 @@ const Hero = () =>
                                 niños
                                 y adultos.
                             </Typography>
-                            <CustomButton
-                                backgroundColor="#0F1B4C"
-                                color="#fff"
-                                buttonText="Mas Sobre Nosotros"
-                                heroBtn={ true }
-                            />
+                            <ScrollLink
+                                to="Nosotros"
+                                smooth={true}
+                                duration={500}
+                            >
+                                <CustomButton
+                                    backgroundColor="#0F1B4C"
+                                    color="#fff"
+                                    buttonText="Mas Sobre Nosotros"
+                                    heroBtn={true}
+                                />
+                            </ScrollLink>
                         </Box>
 
                         <Box sx={ { flex: "1.25" } }>

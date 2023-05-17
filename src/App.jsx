@@ -1,26 +1,18 @@
-import Hero from "./Components/Hero";
-import Companies from "./Components/Companies";
-import Guide from "./Components/Guide";
-import Services from "./Components/Services/Services";
-import Esquema from "./Components/Esquema";
-
-import FAQ from "./Components/FAQ";
-import Formulario from "./Components/formulario/Formulario";
-import Footer from "./Components/Footer";
-import Profesionales from "./Components/profesionales/Profesionales";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './LandingPage';
+import UserPanel from './UserPanel';
+import AdminPanel from './AdminPanel';
 
 function App() {
-    return <>
-        <Hero/>
-        <Guide/>
-        <Services/>
-        <Profesionales/>
-        <Esquema/>
-        <Companies/>
-        <FAQ/>
-        <Formulario/>
-        <Footer/>
-    </>;
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/userpanel" element={<UserPanel />} />
+                <Route path="/adminpanel" element={<AdminPanel />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

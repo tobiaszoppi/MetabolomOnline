@@ -59,7 +59,7 @@ const Profesionales = () =>
         ];
 
         return (
-            <Container>
+            <Container id={"Nosotros"}>
                 <div className="titulo">
                     <h2>Nuestros Profesionales</h2>
                 </div>

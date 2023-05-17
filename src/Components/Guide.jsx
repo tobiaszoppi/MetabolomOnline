@@ -1,5 +1,6 @@
 import {Box, Button, styled, Typography} from "@mui/material";
 import React from "react";
+import {Link as ScrollLink} from 'react-scroll';
 
 import formIcon from "../media/formIcon.png";
 import verifyIcon from "../media/verifyIcon.png";
@@ -66,7 +67,8 @@ const Guide = () =>
                 justifyContent: "center",
                 alignItems: "center",
                 mb: 2,
-            } }>
+            } }
+                 id={ "Metodologia" }>
                 <div style={ {
                     width: "5%",
                     height: "5px",
@@ -111,13 +113,19 @@ const Guide = () =>
                             justifyContent: "center",
                             alignItems: "center"
                         } }>
-                            <Typography variant="body2" sx={ {
-                                fontWeight: "bold",
-                                fontSize: "14px",
-                                color: "#0689FF"
-                            } }>
-                                Ver Formulario de Consulta
-                            </Typography>
+                            <ScrollLink
+                                to="formulario"
+                                smooth={ true }
+                                duration={ 500 }
+                            >
+                                <Typography variant="body2" sx={ {
+                                    fontWeight: "bold",
+                                    fontSize: "14px",
+                                    color: "#0689FF"
+                                } }>
+                                    Ver Formulario de Consulta
+                                </Typography>
+                            </ScrollLink>
                             <ArrowRightAltIcon style={ { color: "#0689FF" } }/>
                         </Box>
                     </GuideBox>
@@ -177,12 +185,18 @@ const Guide = () =>
                     </GuideBox>
                 </GuidesBox>
 
-                <CustomButton
-                    backgroundColor="#0F1B4C"
-                    color="#fff"
-                    buttonText="Ver Guia Completa"
-                    guideBtn={ true }
-                />
+                <ScrollLink
+                    to="Esquema"
+                    smooth={ true }
+                    duration={ 500 }
+                >
+                    <CustomButton
+                        backgroundColor="#0F1B4C"
+                        color="#fff"
+                        buttonText="Ver Guia Completa"
+                        guideBtn={ true }
+                    />
+                </ScrollLink>
             </Box>
         );
     };

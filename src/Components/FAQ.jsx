@@ -88,7 +88,7 @@ const FAQ = () =>
             };
 
         return (
-            <CustomBox>
+            <CustomBox id={"FAQ"}>
                 <CustomTitle>Preguntas Frecuentes</CustomTitle>
                 <CustomText>
                     Aquí hay algunas preguntas frecuentemente hechas. Si quisiera hacer alguna otra pregunta,

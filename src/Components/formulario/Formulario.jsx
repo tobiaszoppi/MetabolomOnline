@@ -90,7 +90,7 @@ const Formulario = () =>
             };
 
         return (
-            <div className="formulario">
+            <div className="formulario" id={"Contacto"}>
                 { etapaActual === 1 && (
                     <Etapa1
                         datosEtapa1={ datosEtapa1 }

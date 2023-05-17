@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link as ScrollLink} from 'react-scroll';
 import {Box, Container, styled, Typography} from "@mui/material";
 import Ilustracion1 from "../media/illustration-features-tab-1.svg";
 import Ilustracion2 from "../media/illustration-features-tab-2.svg";
@@ -136,7 +137,7 @@ const TextoSecundario = styled(Typography)(
         }
     ));
 
-const Informacion = styled("a")(
+const Informacion = styled(Typography)(
     ( { theme } ) => (
         {
             color: "#eef7fd",
@@ -156,50 +157,63 @@ const Esquema = () =>
     {
         const [option, setOption] = useState("1");
         return (
-                <Container sx={{paddingTop: "2rem", paddingBottom: "1rem", backgroundColor: "#fff", borderTopRightRadius: "20px", borderTopLeftRadius: "20px" }}>
-                    <Titulo>Esquema de Trabajo</Titulo>
-                    <Texto variant="body2">
-                        Nuestro objetivo es ofrecerle un servicio integral y personalizado para mejorar su salud y
-                        bienestar.<br/>
-                        Para ello, contamos con un esquema de trabajo que consta de diferentes pasos: evaluación
-                        inicial,
-                        diagnóstico, tratamiento y seguimiento.<br/>
-                        A continuación, le explicamos brevemente en qué consiste cada uno de ellos.
-                    </Texto>
-                    <Menu>
-                        <p onClick={ () => setOption("1") }>Evaluación</p>
-                        <p onClick={ () => setOption("2") }>Diagnóstico</p>
-                        <p onClick={ () => setOption("3") }>Seguimiento</p>
-                    </Menu>
+            <Container sx={ {
+                paddingTop: "2rem",
+                paddingBottom: "1rem",
+                backgroundColor: "#fff",
+                borderTopRightRadius: "20px",
+                borderTopLeftRadius: "20px"
+            } }
+                       id={ "Esquema" }>
+                <Titulo>Esquema de Trabajo</Titulo>
+                <Texto variant="body2">
+                    Nuestro objetivo es ofrecerle un servicio integral y personalizado para mejorar su salud y
+                    bienestar.<br/>
+                    Para ello, contamos con un esquema de trabajo que consta de diferentes pasos: evaluación
+                    inicial,
+                    diagnóstico, tratamiento y seguimiento.<br/>
+                    A continuación, le explicamos brevemente en qué consiste cada uno de ellos.
+                </Texto>
+                <Menu>
+                    <p onClick={ () => setOption("1") }>Evaluación</p>
+                    <p onClick={ () => setOption("2") }>Diagnóstico</p>
+                    <p onClick={ () => setOption("3") }>Seguimiento</p>
+                </Menu>
 
-                    <div>
-                        { option === "1" ? (
-                            <Carta>
-                                <Imagen>
-                                    <img src={ Ilustracion1 } alt="features"/>
-                                </Imagen>
-                                <ContenedorSecundario>
-                                    <TituloSecundario>Envió y Evaluación de Antecedentes</TituloSecundario>
-                                    <TextoSecundario>
-                                        Para iniciar el tratamiento en Metabolom, el paciente debe completar y enviar el
-                                        formulario que se encuentra al final de esta página.<br/>
-                                        Además, debe adjuntar los resultados de los estudios clínicos que se haya
-                                        realizado durante el último año.<br/>
-                                        Los especialistas de Metabolom revisarán los antecedentes del paciente y le
-                                        asignarán un turno para el primer encuentro virtual.<br/>
-                                        En esta sesión, se analizará en detalle la historia clínica del paciente y los
-                                        estudios previos. También se le indicará al paciente qué estudios específicos
-                                        debe realizar para investigar el origen de su afección.
-                                    </TextoSecundario>
-                                    <Informacion href="/">Completar Formulario</Informacion>
-                                </ContenedorSecundario>
-                            </Carta>
-                        ) : option === "2" ? (
-                            <Carta>
-                                <Imagen>
-                                    <img src={ Ilustracion2 } alt="features"/>
-                                </Imagen>
-                                <ContenedorSecundario>
+                <div>
+                    { option === "1" ? (
+                        <Carta>
+                            <Imagen>
+                                <img src={ Ilustracion1 } alt="features"/>
+                            </Imagen>
+                            <ContenedorSecundario>
+                                <TituloSecundario>Envió y Evaluación de Antecedentes</TituloSecundario>
+                                <TextoSecundario>
+                                    Para iniciar el tratamiento en Metabolom, el paciente debe completar y enviar el
+                                    formulario que se encuentra al final de esta página.<br/>
+                                    Además, debe adjuntar los resultados de los estudios clínicos que se haya
+                                    realizado durante el último año.<br/>
+                                    Los especialistas de Metabolom revisarán los antecedentes del paciente y le
+                                    asignarán un turno para el primer encuentro virtual.<br/>
+                                    En esta sesión, se analizará en detalle la historia clínica del paciente y los
+                                    estudios previos. También se le indicará al paciente qué estudios específicos
+                                    debe realizar para investigar el origen de su afección.
+                                </TextoSecundario>
+                                <ScrollLink
+                                    to="Contacto"
+                                    smooth={ true }
+                                    duration={ 500 }
+                                >
+                                    <Informacion>Completar Formulario</Informacion>
+                                </ScrollLink>
+                            </ContenedorSecundario>
+                        </Carta>
+                    ) : option === "2" ? (
+                        <Carta>
+                            <Imagen>
+                                <img src={ Ilustracion2 } alt="features"/>
+                            </Imagen>
+                            <ContenedorSecundario>
                                 <TituloSecundario>Diagnóstico de Resultados y Acompañamiento del
                                     Paciente</TituloSecundario>
                                 <TextoSecundario>
@@ -219,15 +233,21 @@ const Esquema = () =>
                                     recomendaciones
                                     nutricionales y hábitos saludables.
                                 </TextoSecundario>
-                                <Informacion href="/">Completar Formulario</Informacion>
-                                </ContenedorSecundario>
-                            </Carta>
-                        ) : (
-                            <Carta>
-                                <Imagen>
-                                    <img src={ Ilustracion3 } alt="features"/>
-                                </Imagen>
-                                <ContenedorSecundario>
+                                <ScrollLink
+                                    to="Contacto"
+                                    smooth={ true }
+                                    duration={ 500 }
+                                >
+                                    <Informacion>Completar Formulario</Informacion>
+                                </ScrollLink>
+                            </ContenedorSecundario>
+                        </Carta>
+                    ) : (
+                        <Carta>
+                            <Imagen>
+                                <img src={ Ilustracion3 } alt="features"/>
+                            </Imagen>
+                            <ContenedorSecundario>
                                 <TituloSecundario>Seguimiento</TituloSecundario>
                                 <TextoSecundario>
                                     El seguimiento se coordina según la necesidad del paciente o la decisión del
@@ -243,12 +263,18 @@ const Esquema = () =>
                                     Para los análisis específicos se utilizan laboratorios de alta complejidad
                                     cercanos al paciente o se coordina logística para envío de muestras.<br/>
                                 </TextoSecundario>
-                                <Informacion href="/">Completar Formulario</Informacion>
-                                </ContenedorSecundario>
-                            </Carta>
-                        ) }
-                    </div>
-                </Container>
+                                <ScrollLink
+                                    to="Contacto"
+                                    smooth={ true }
+                                    duration={ 500 }
+                                >
+                                    <Informacion>Completar Formulario</Informacion>
+                                </ScrollLink>
+                            </ContenedorSecundario>
+                        </Carta>
+                    ) }
+                </div>
+            </Container>
         );
     }
 export default Esquema;
