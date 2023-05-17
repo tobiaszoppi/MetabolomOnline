@@ -29,32 +29,32 @@ const Profesionales = () =>
                 id: 3,
                 imagen: graciela,
                 nombre: "DRA. VARELA Graciela",
-                descripcion: "Descripción del profesional 2",
+                descripcion: "Descripción del profesional 3",
             },
             {
                 id: 4,
                 imagen: meliImage,
                 nombre: "DRA. BIANCALANA Melina",
-                descripcion: "Descripción del profesional 2",
+                descripcion: "Descripción del profesional 4",
             },
             {
                 id: 5,
                 imagen: mariana,
                 nombre: "DRA. MARIANI Mariana",
-                descripcion: "Descripción del profesional 2",
+                descripcion: "Descripción del profesional 5",
             },
             {
                 id: 6,
                 imagen: laura,
                 nombre: "LIC. VAZQUEZ Laura",
-                descripcion: "Descripción del profesional 2",
+                descripcion: "Descripción del profesional 6",
             },
 
             {
                 id: 7,
                 imagen: barbara,
                 nombre: "DRA. GONZALEZ Barbara",
-                descripcion: "Descripción del profesional 2",
+                descripcion: "Descripción del profesional 7",
             },
         ];
 
