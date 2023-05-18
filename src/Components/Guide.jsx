@@ -80,6 +80,7 @@ const Guide = () =>
                     fontSize: "35px",
                     fontWeight: "bold",
                     color: "#000339",
+                    textAlign: "center",
                     my: 3
                 } }>
                     ¿Cuáles son los pasos?
