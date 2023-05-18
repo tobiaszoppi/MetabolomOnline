@@ -4,23 +4,27 @@ import Guide from './Components/Guide';
 import Services from './Components/Services/Services';
 import Profesionales from './Components/profesionales/Profesionales';
 import Esquema from './Components/Esquema';
-import Companies from './Components/Companies';
+import InformacionGeneral from './Components/InformacionGeneral';
 import FAQ from './Components/FAQ';
 import Formulario from './Components/formulario/Formulario';
-import Footer from './Components/Footer';
+import TipoServicios from "./Components/Services/TipoServicios";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 const LandingPage = () => {
     return (
         <>
+            <Navbar />
             <Hero />
             <Guide />
             <Services />
             <Profesionales  />
             <Esquema />
-            <Companies />
+            <InformacionGeneral />
+            <TipoServicios />
             <FAQ />
             <Formulario />
-            <Footer />
+            <Footer/>
         </>
     );
 };

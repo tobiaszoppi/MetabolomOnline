@@ -39,7 +39,7 @@ const Hero = () =>
         return (
             <Box id={"Inicio"} sx={ {mb: 2, backgroundColor: "#E6F0FF", minHeight: "80vh" } } >
                 <Container>
-                    <Navbar/>
+
                     <CustomBox>
                         <Box sx={ { flex: "1", mb: 4 } }>
                             <Typography

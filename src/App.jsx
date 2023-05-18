@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
 import UserPanel from './UserPanel';
 import AdminPanel from './AdminPanel';
+import React from "react";
 
 function App() {
     return (

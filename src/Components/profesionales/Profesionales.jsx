@@ -1,6 +1,6 @@
 import React from 'react';
 import CartaPro from "./CartaPro";
-import {Container, Grid, styled} from "@mui/material";
+import {Box, Container, Grid, styled, Typography} from "@mui/material";
 import natiImage from "../../media/profesionales/nati2.png";
 import meliImage from "../../media/profesionales/meli2.png"
 import mariana from "../../media/profesionales/mariana2.png"
@@ -16,45 +16,46 @@ const Profesionales = () =>
             {
                 id: 1,
                 imagen: natiImage,
-                nombre: "DRA. CESARI Natalia ",
-                descripcion: "Descripción del profesional 1",
+                nombre: "DRA. CESARI Natalia",
+                descripcion: "Bioquimica Especializada en Enfermedades metabolicas congenitas.",
             },
             {
                 id: 2,
                 imagen: norberto,
                 nombre: "DR. GUELBERT Norberto",
-                descripcion: "Descripción del profesional 2",
-            },
-            {
-                id: 3,
-                imagen: graciela,
-                nombre: "DRA. VARELA Graciela",
-                descripcion: "Descripción del profesional 3",
-            },
-            {
-                id: 4,
-                imagen: meliImage,
-                nombre: "DRA. BIANCALANA Melina",
-                descripcion: "Descripción del profesional 4",
-            },
-            {
-                id: 5,
-                imagen: mariana,
-                nombre: "DRA. MARIANI Mariana",
-                descripcion: "Descripción del profesional 5",
-            },
-            {
-                id: 6,
-                imagen: laura,
-                nombre: "LIC. VAZQUEZ Laura",
-                descripcion: "Descripción del profesional 6",
+                descripcion: "Medico Neuropediatra Especialista en Enfermedades metabolicas congenitas.",
             },
 
             {
-                id: 7,
+                id: 3,
+                imagen: meliImage,
+                nombre: "DRA. BIANCALANA Melina",
+                descripcion: "Medica Integrativa con Abordaje en Psiconeuroinmunologia.",
+            },
+            {
+                id: 4,
+                imagen: laura,
+                nombre: "LIC. VAZQUEZ M. Laura",
+                descripcion: "Lic. en Nutricion Orientacion Psiconeuroinmunologia.",
+            },
+
+            {
+                id: 5,
                 imagen: barbara,
                 nombre: "DRA. GONZALEZ Barbara",
-                descripcion: "Descripción del profesional 7",
+                descripcion: "Lic. en Psicologia, Acompañamiento Adultos y Niños, Abordaje Integral.",
+            },
+            {
+                id: 6,
+                imagen: graciela,
+                nombre: "DRA. VARELA Graciela",
+                descripcion: "Médica especializada en trastornos del neurodesarrollo y terapias naturales.",
+            },
+            {
+                id: 7,
+                imagen: mariana,
+                nombre: "DRA. MARIANI Mariana",
+                descripcion: "Medica Clinica con orientacion en medicina funcional integrativa y ortomolecular.",
             },
         ];
 
@@ -62,6 +63,9 @@ const Profesionales = () =>
             <Container id={"Nosotros"}>
                 <div className="titulo">
                     <h2>Nuestros Profesionales</h2>
+                    <Typography sx={{ textAlign: "center"}}>
+                        En Metabolom nos dedicamos al estudio y tratamiento integral de las enfermedades metabólicas, con un enfoque personalizado y basado en la evidencia científica. Nuestro equipo está formado por médicos especialistas en endocrinología, nutrición y bioquímica clínica, que te acompañarán en todo el proceso para mejorar tu salud y calidad de vida.
+                    </Typography>
                 </div>
                 <Grid container spacing={ 2 } style={ { justifyContent: "center" } }>
                     { profesionales.map(( profesional ) => (
