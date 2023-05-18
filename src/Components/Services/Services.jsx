@@ -12,7 +12,7 @@ const Services = () =>
                                 smooth={ true }
                                 duration={ 500 }
                                 className="card red">
-                        <p className="tip">Infantes</p>
+                        <p className="tip">Infantes y Adolescentes</p>
                         <p className="second-text">Más Información</p>
                     </ScrollLink>
                     <ScrollLink to="Adultos"

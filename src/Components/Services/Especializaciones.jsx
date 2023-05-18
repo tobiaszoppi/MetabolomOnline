@@ -38,7 +38,7 @@ const Especializaciones = () =>
                         boxShadow: "10.5px 6px 3.5px 0 #dddddd",
                     } }>
                         <div id="Infantes">
-                            <CustomTitle>Infantes</CustomTitle>
+                            <CustomTitle>Infantes y Adolescentes</CustomTitle>
                             <CustomTypography>En Metabolom, nos dedicamos a la atención integral de niños y jóvenes con
                                 diversas
                                 condiciones o
