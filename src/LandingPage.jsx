@@ -17,8 +17,8 @@ const LandingPage = () => {
             <Navbar />
             <Hero />
             <Guide />
-            <Services />
             <Profesionales  />
+            <Services />
             <Esquema />
             <InformacionGeneral />
             <Especializaciones />
