@@ -8,21 +8,21 @@ const Services = () =>
             <div className="contenedor">
                 <h2>Nuestras Especializaciónes</h2>
                 <div className="cards">
-                    <ScrollLink to="infantes"
+                    <ScrollLink to="Infantes"
                                 smooth={ true }
                                 duration={ 500 }
                                 className="card red">
                         <p className="tip">Infantes</p>
                         <p className="second-text">Más Información</p>
                     </ScrollLink>
-                    <ScrollLink to="adultos"
+                    <ScrollLink to="Adultos"
                                 smooth={ true }
                                 duration={ 500 }
                                 className="card blue">
                         <p className="tip">Adultos</p>
                         <p className="second-text">Más Información</p>
                     </ScrollLink>
-                    <ScrollLink to="general"
+                    <ScrollLink to="General"
                                 smooth={ true }
                                 duration={ 500 }
                                 className="card green">

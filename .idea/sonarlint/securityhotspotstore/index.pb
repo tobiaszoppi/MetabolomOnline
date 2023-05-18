@@ -426,8 +426,6 @@ M
 src/Components/uploadFile.jsx,b\6\b65ad3e9fd5cb23ccdcfc93f25a076d09b792de8
 T
 $src/Components/formulario/Etapa2.jsx,6\6\66f199cb775bf2b75826591c9b08781f5d99eb70
-I
-src/Components/Footer.jsx,3\0\305fd1dc12c702b6bb2064e0775304bd9bfe155f
 w
 G.idea/sonarlint/issuestore/9/8/98cdda3e00c24ac72814f7f2d393d547a1eae62b,0\d\0d28653d051caac2a22e9fa58452afea58a3fe38
 Å

@@ -1,5 +1,6 @@
 import { styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
+import {Link as ScrollLink} from 'react-scroll';
 import React from "react";
 
 import fbIcon from "../media/fbicon.png";
@@ -26,7 +27,7 @@ const Footer = () => {
     },
   }));
 
-  const FooterLink = styled("span")(({ theme }) => ({
+  const FooterLink = styled(ScrollLink)(() => ({
     fontSize: "16px",
     color: "#7A7A7E",
     fontWeight: "300",
@@ -51,11 +52,17 @@ const Footer = () => {
                 Sobre Nosotros
               </Typography>
 
-              <FooterLink>¿Qué es Metabolom?</FooterLink>
+              <FooterLink to="Inicio"
+                          smooth={ true }
+                          duration={ 500 }>¿Qué es Metabolom?</FooterLink>
               <br />
-              <FooterLink>Profesionales</FooterLink>
+              <FooterLink to="Nosotros"
+                          smooth={ true }
+                          duration={ 500 }>Profesionales</FooterLink>
               <br />
-              <FooterLink>Solicitar Consulta</FooterLink>
+              <FooterLink to="Esquema"
+                          smooth={ true }
+                          duration={ 500 }>Solicitar Consulta</FooterLink>
             </Box>
 
               <Box>
@@ -70,11 +77,17 @@ const Footer = () => {
                       Tipos de Consultas
                   </Typography>
 
-                  <FooterLink>Infantes</FooterLink>
+                  <FooterLink to="Infantes"
+                              smooth={ true }
+                              duration={ 500 }>Infantes</FooterLink>
                   <br />
-                  <FooterLink>Adultos</FooterLink>
+                  <FooterLink to="Adultos"
+                              smooth={ true }
+                              duration={ 500 }>Adultos</FooterLink>
                   <br />
-                  <FooterLink>Generales</FooterLink>
+                  <FooterLink to="General"
+                              smooth={ true }
+                              duration={ 500 }>Generales</FooterLink>
                   <br />
               </Box>
 

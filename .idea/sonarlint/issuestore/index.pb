@@ -424,8 +424,6 @@ T
 $src/Components/formulario/Etapa1.jsx,1\8\18bde179a004c9a76ae727d5df4ff2b77e196182
 M
 src/Components/uploadFile.jsx,b\6\b65ad3e9fd5cb23ccdcfc93f25a076d09b792de8
-I
-src/Components/Footer.jsx,3\0\305fd1dc12c702b6bb2064e0775304bd9bfe155f
 T
 $src/Components/formulario/Etapa2.jsx,6\6\66f199cb775bf2b75826591c9b08781f5d99eb70
 w
