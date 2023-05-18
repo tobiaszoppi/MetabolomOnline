@@ -7,7 +7,7 @@ import Esquema from './Components/Esquema';
 import InformacionGeneral from './Components/InformacionGeneral';
 import FAQ from './Components/FAQ';
 import Formulario from './Components/formulario/Formulario';
-import TipoServicios from "./Components/Services/TipoServicios";
+import Especializaciones from "./Components/Services/Especializaciones";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
@@ -21,7 +21,7 @@ const LandingPage = () => {
             <Profesionales  />
             <Esquema />
             <InformacionGeneral />
-            <TipoServicios />
+            <Especializaciones />
             <FAQ />
             <Formulario />
             <Footer/>

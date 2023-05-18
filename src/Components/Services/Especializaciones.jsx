@@ -6,10 +6,10 @@ const CustomTitle = styled(Typography) (() => ({
     fontWeight: "500",
 }));
 
-const TipoServicios = () =>
+const Especializaciones = () =>
     {
         return (
-            <div id="tiposervicios"
+            <div id="Especializaciones"
                        className="contenedor"
                  style={{ marginTop: "1rem",}}>
                 <h2>Tipos de Servicios</h2>
@@ -29,4 +29,4 @@ const TipoServicios = () =>
         );
     };
 
-export default TipoServicios;
+export default Especializaciones;
