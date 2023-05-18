@@ -1,11 +1,11 @@
 .titulo h2 {
     width: fit-content;
-    margin: auto;
     border-bottom: 5px solid rgba(0,186,255,0.2);
     color: #000339;
     font-weight: 800;
     font-size: 35px;
     text-align: center;
+    margin: 3rem auto 2rem;
 }
 
 .card {

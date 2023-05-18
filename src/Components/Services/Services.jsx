@@ -6,7 +6,7 @@ const Services = () =>
     {
         return (
             <div className="contenedor">
-                <h2>Nuestras Especializaciónes</h2>
+                <h2>Areas de Atención</h2>
                 <div className="cards">
                     <ScrollLink to="Infantes"
                                 smooth={ true }

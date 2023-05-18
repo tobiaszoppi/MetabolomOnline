@@ -28,7 +28,7 @@ const Especializaciones = () =>
             <Container>
                 <div id="Especializaciones"
                      className="contenedor">
-                    <h2 style={ { marginTop: "1rem" } }>Especializaciones</h2>
+                    <h2 style={ { marginTop: "1rem" } }>Areas de Atención</h2>
                     <div style={ {
                         marginTop: "1rem", textAlign: "center", background: "white",
                         padding: "1rem",
