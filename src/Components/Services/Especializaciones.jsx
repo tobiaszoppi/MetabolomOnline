@@ -4,15 +4,20 @@ import "./services.css";
 const CustomTitle = styled(Typography)(
     () => (
         {
+            width: "fit-content",
+            margin: "auto",
             fontSize: "24px",
             fontWeight: "600",
+            color: "#000339",
+            borderBottom: "3px solid rgba(0,186,255,0.2)",
         }
     ));
 const CustomTypography = styled(Typography)(
     () => (
         {
             fontSize: "16px",
-            fontWeight: "400",
+            fontWeight: "500",
+            lineHeight: "1.7em",
             textAlign: "justify",
         }
     ));
