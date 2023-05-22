@@ -4,26 +4,15 @@ const Etapa1 = ( { datosEtapa1, manejarCambioEtapa1, manejarSiguienteEtapa } ) =
     {
         const camposEtapa1 = [
             {
-                name: 'fullName',
-                label: 'Nombre completo',
-                placeholder: 'Ingrese su nombre completo',
+                name: 'firstName',
+                label: 'Nombre del paciente',
+                placeholder: 'Ingrese su nombre',
                 type: 'text'
             },
             {
-                name: 'dateOfBirth',
-                label: 'Fecha de nacimiento',
-                type: 'date'
-            },
-            {
-                name: 'email',
-                label: 'Email',
-                placeholder: 'Ingrese su email',
-                type: 'email'
-            },
-            {
-                name: 'mobileNumber',
-                label: 'Número de teléfono móvil',
-                placeholder: 'Ingrese su número de teléfono móvil',
+                name: 'lastName',
+                label: 'Apellido del paciente',
+                placeholder: 'Ingrese su apellido',
                 type: 'text'
             },
             {
@@ -33,20 +22,32 @@ const Etapa1 = ( { datosEtapa1, manejarCambioEtapa1, manejarSiguienteEtapa } ) =
                 options: ['Hombre', 'Mujer']
             },
             {
+                name: 'dateOfBirth',
+                label: 'Fecha de nacimiento',
+                placeholder: 'Ingrese su fecha de nacimiento',
+                type: 'date'
+            },
+            {
+                name: 'email',
+                label: 'Email',
+                placeholder: 'Ingrese su mail',
+                type: 'email'
+            },
+            {
+                name: 'mobileNumber',
+                label: 'Número de teléfono móvil',
+                placeholder: 'Ingrese su número de teléfono móvil',
+                type: 'text'
+            },
+            {
                 name: 'birthPlace',
                 label: 'Lugar de nacimiento',
                 placeholder: 'Ingrese su lugar de nacimiento',
                 type: 'text'
             },
             {
-                name: 'placeResidence',
-                label: 'Lugar de residencia',
-                placeholder: 'Ingrese su lugar de residencia',
-                type: 'text'
-            },
-            {
                 name: 'idType',
-                label: 'Tipo de identificación',
+                label: 'Tipo de identificación (DNI, PASAPORTE, ETC)',
                 placeholder: 'Ingrese el tipo de identificación',
                 type: 'text'
             },
@@ -54,12 +55,6 @@ const Etapa1 = ( { datosEtapa1, manejarCambioEtapa1, manejarSiguienteEtapa } ) =
                 name: 'idNumber',
                 label: 'Número de identificación',
                 placeholder: 'Ingrese el número de identificación',
-                type: 'text'
-            },
-            {
-                name: 'issuedAuthority',
-                label: 'Autoridad emisora',
-                placeholder: 'Ingrese la autoridad emisora',
                 type: 'text'
             },
         ];
@@ -103,18 +98,18 @@ const Etapa1 = ( { datosEtapa1, manejarCambioEtapa1, manejarSiguienteEtapa } ) =
                                         <label className="user-label" htmlFor={ campo.name }>{ campo.label }</label>
                                         { campo.type === 'date' ? (
                                             <input className="input"
-                                                type="date"
-                                                name={ campo.name }
-                                                value={ datosEtapa1[ campo.name ] }
-                                                onChange={ handleChange }
+                                                   type="date"
+                                                   name={ campo.name }
+                                                   value={ datosEtapa1[ campo.name ] }
+                                                   onChange={ handleChange }
                                             />
                                         ) : (
                                             <input className="input"
-                                                type={ campo.type }
-                                                name={ campo.name }
-                                                value={ datosEtapa1[ campo.name ] }
-                                                onChange={ handleChange }
-                                                placeholder={ campo.placeholder }
+                                                   type={ campo.type }
+                                                   name={ campo.name }
+                                                   value={ datosEtapa1[ campo.name ] }
+                                                   onChange={ handleChange }
+                                                   placeholder={ campo.placeholder }
                                             />
                                         ) }
                                     </div>

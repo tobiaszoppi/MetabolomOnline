@@ -7,16 +7,15 @@ const Formulario = () =>
     {
         const [etapaActual, setEtapaActual] = useState(1);
         const [datosEtapa1, setDatosEtapa1] = useState({
-            fullName: '',
+            firstName: '',
+            lastName: '',
+            gender: '',
             dateOfBirth: '',
             email: '',
             mobileNumber: '',
-            gender: '',
             birthPlace: '',
-            placeResidence: '',
             idType: '',
             idNumber: '',
-            issuedAuthority: ''
         });
         const [datosEtapa2, setDatosEtapa2] = useState({
             addressType: '',
@@ -90,7 +89,7 @@ const Formulario = () =>
             };
 
         return (
-            <div className="formulario" id={"Contacto"}>
+            <div className="formulario" id={ "Contacto" }>
                 { etapaActual === 1 && (
                     <Etapa1
                         datosEtapa1={ datosEtapa1 }

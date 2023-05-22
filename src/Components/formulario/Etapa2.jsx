@@ -5,8 +5,8 @@ const Etapa2 = ( { datosEtapa2, manejarCambioEtapa2, volverEtapa1, manejarEnviar
         const camposEtapa2 = [
             {
                 name: 'addressType',
-                label: 'Tipo de dirección',
-                placeholder: 'Ingrese el tipo de dirección',
+                label: 'Direccion de residencia',
+                placeholder: 'Ingrese su direccion de residencia',
                 type: 'text'
             },
             {
@@ -18,18 +18,18 @@ const Etapa2 = ( { datosEtapa2, manejarCambioEtapa2, volverEtapa1, manejarEnviar
             {
                 name: 'state',
                 label: 'Estado',
-                placeholder: 'Ingrese el estado',
+                placeholder: 'Ingrese el estado de residencia',
                 type: 'text'
             },
             {
                 name: 'locality',
                 label: 'Localidad',
-                placeholder: 'Ingrese la localidad',
+                placeholder: 'Ingrese la localidad de residencia',
                 type: 'text'
             },
             {
-                name: 'fatherName',
-                label: 'Nombre del padre',
+                name: 'reason',
+                label: 'Motivo de la consulta',
                 placeholder: 'Ingrese el nombre del padre',
                 type: 'text'
             },
@@ -44,18 +44,6 @@ const Etapa2 = ( { datosEtapa2, manejarCambioEtapa2, volverEtapa1, manejarEnviar
                 label: 'Nombre del abuelo',
                 placeholder: 'Ingrese el nombre del abuelo',
                 type: 'text'
-            },
-            {
-                name: 'password',
-                label: 'Contraseña',
-                placeholder: 'Ingrese su contraseña',
-                type: 'password'
-            },
-            {
-                name: 'confirmPassword',
-                label: 'Confirmar Contraseña',
-                placeholder: 'Confirme su contraseña',
-                type: 'password'
             },
         ];
 
