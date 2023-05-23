@@ -33,15 +33,14 @@ const Especializaciones = () =>
                         marginTop: "1rem", textAlign: "center", background: "white",
                         padding: "1rem",
                         borderRadius: "10px",
-                        webkitBoxShadow: "10.5px 6px 3.5px 0 #dddddd",
-                        mozBoxShadow: "10.5px 6px 3.5px 0 #dddddd",
+                        WebkitBoxShadow: "10.5px 6px 3.5px 0 #dddddd",
+                        MozBoxShadow: "10.5px 6px 3.5px 0 #dddddd",
                         boxShadow: "10.5px 6px 3.5px 0 #dddddd",
                     } }>
                         <div id="Infantes">
-                            <CustomTitle>Infantes y Adolescentes</CustomTitle>
-                            <CustomTypography>En Metabolom, nos dedicamos a la atención integral de niños y jóvenes con
-                                diversas
-                                condiciones o
+                            <CustomTitle>Niños y Adolescentes</CustomTitle>
+                            <CustomTypography>En Metabolom nos dedicamos a la atención integral de niños y jóvenes con
+                                diversas condiciones o
                                 patologías que afectan su calidad de vida y su desarrollo.<br/> Contamos con un equipo
                                 multidisciplinario de profesionales que realizan un diagnóstico preciso y personalizado,
                                 basado
@@ -61,8 +60,8 @@ const Especializaciones = () =>
                         </div>
                         <div id="Adultos">
                             <CustomTitle>Adultos</CustomTitle>
-                            <CustomTypography>En Metabolom, ofrecemos un servicio de atención a adultos con síntomas y
-                                enfermedades relacionadas con el metabolismo. <br/> Nuestro equipo de profesionales
+                            <CustomTypography>Ofrecemos un servicio de atención a adultos desde el diagnóstico y prevención de enfermedades metabólicas
+                                <br/> Nuestro equipo de profesionales
                                 realiza
                                 una evaluación integral de cada paciente, teniendo en cuenta su historia clínica, sus
                                 antecedentes familiares y personales, y los resultados de un perfil de laboratorio
@@ -76,18 +75,6 @@ const Especializaciones = () =>
                                 objetivo
                                 es llegar al origen de la afección para generar disminución de los síntomas, prevención
                                 de aparición de otras enfermedades y mejora de la calidad de vida.</CustomTypography>
-                        </div>
-                        <div id="General">
-                            <CustomTitle>General</CustomTitle>
-                            <CustomTypography>Metabolom es una clínica médica especializada en el diagnóstico y
-                                tratamiento de enfermedades metabólicas que afectan a niños, jóvenes y adultos. <br/> Nuestro
-                                equipo de profesionales cuenta con amplia experiencia y conocimientos en el campo de la
-                                medicina metabólica, y utiliza técnicas de análisis específicas y personalizadas para
-                                cada paciente.<br/> Atendemos a personas con diversas condiciones que alteran su calidad de
-                                vida y su desarrollo, como trastornos del espectro autista, celiaquía, alergias,
-                                migrañas, depresión, sobrepeso, entre otras.<br/> Nuestra metodología se basa en la
-                                evaluación integral de cada caso, el seguimiento clínico y el tratamiento adecuado para
-                                mejorar la salud y el bienestar de nuestros pacientes.</CustomTypography>
                         </div>
                     </div>
                 </div>

@@ -69,15 +69,10 @@ const InformacionGeneral = () =>
                         Metabolom brinda un servicio multidisciplinario bioquímico-médico-nutricionista para la
                         investigación y diagnóstico de Enfermedades Metabólicas Congénitas y Adquiridas en pacientes
                         neonatos, niños y adultos.<br></br>
-                        En Metabolom trabajamos en equipo multidisciplinario para mejorar la calidad de vida y el
-                        desarrollo de los niños.<br></br>
-                        Mediante el estudio de análisis específicos y personalizados y la integración con el control
+                        En Metabolom trabajamos en equipo para mejorar la calidad de vida.<br></br>
+                        Mediante el estudio de análisis específicos personalizados y la integración con el control
                         clínico, investigamos hasta llegar al Diagnóstico de la condición o patología.<br></br>
-                        Se estudian casos del espectro autista, trastornos del desarrollo, celiaquía, intolerancia a los
-                        alimentos, alergias específicas, dermatitis, enfermedades metabólicas congénitas,
-                        simbiosis.<br></br>
-                        Los encuentros se realizan con el tutor del menor y en algunos casos pueden solicitarse fotos
-                        del mismo para explicar alguna situación clínica en particular.
+                        Los encuentros se realizan mediante una plataforma de comunicación virtual.
                     </CustomTypografy>
                 </CustomContainer>
 

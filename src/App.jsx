@@ -3,14 +3,17 @@ import LandingPage from './LandingPage';
 import UserPanel from './UserPanel';
 import AdminPanel from './AdminPanel';
 import React from "react";
+import Login from "./Components/seguimiento/Login";
 
 function App() {
     return (
         <Router>
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                <Route path="/userpanel" element={<UserPanel />} />
-                <Route path="/adminpanel" element={<AdminPanel />} />
+                <Route path="/iniciarSesion" element={<Login />} />
+
+                    <Route path="/adminpanel" element={<AdminPanel />} />
+
             </Routes>
         </Router>
     );

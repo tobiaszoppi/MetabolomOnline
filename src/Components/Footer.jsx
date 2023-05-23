@@ -4,8 +4,8 @@ import {Link as ScrollLink} from 'react-scroll';
 import React from "react";
 
 import fbIcon from "../media/fbicon.png";
-import twitterIcon from "../media/twittericon.png";
-import linkedinIcon from "../media/linkedinicon.png";
+import instagramIcon from "../media/instagramIcon.svg";
+import gmailIcon from "../media/gmailIcon.svg";
 
 const Footer = () => {
   const CustomContainer = styled(Container)(({ theme }) => ({
@@ -79,19 +79,15 @@ const Footer = () => {
 
                   <FooterLink to="Infantes"
                               smooth={ true }
-                              duration={ 500 }>Infantes</FooterLink>
+                              duration={ 500 }>Niños y Adolescentes</FooterLink>
                   <br />
                   <FooterLink to="Adultos"
                               smooth={ true }
                               duration={ 500 }>Adultos</FooterLink>
                   <br />
-                  <FooterLink to="General"
-                              smooth={ true }
-                              duration={ 500 }>Generales</FooterLink>
-                  <br />
               </Box>
 
-            <Box>
+            <Box sx={{alignContent: "center"}}>
               <Typography
                   sx={{
                     fontSize: "20px",
@@ -100,33 +96,32 @@ const Footer = () => {
                     mb: 2,
                   }}
               >
-                Redes Sociales
+                Contactenos
               </Typography>
+                <IconBox sx={{ alignContent: "center", alignItems: "center", textAlign: "center"}}>
+                    <img
+                        src={gmailIcon}
+                        alt="gmailIcon"
+                        style={{ cursor: "pointer", maxWidth: "28px"}}
+                    />
 
-              <Typography
-                  sx={{
-                    fontSize: "14px",
-                    color: "#7A7A7E",
-                    fontWeight: "500",
-                    mb: 2,
-                  }}
-              >
-                  En nuestras redes sociales, puede encontrar más <br/> información detallada sobre nuestros profesionales <br/> y los proyectos que realizamos.
-              </Typography>
-
+                <Typography
+                    sx={{
+                        fontSize: "14px",
+                        color: "#7A7A7E",
+                        fontWeight: "500",
+                        mb: 2,
+                    }}
+                >metabolomonline@gmail.com</Typography>
+                </IconBox>
               <IconBox>
-                <img src={fbIcon} alt="fbIcon" style={{ cursor: "pointer" }} />
                 <img
-                    src={twitterIcon}
-                    alt="twitterIcon"
-                    style={{ cursor: "pointer" }}
-                />
-                <img
-                    src={linkedinIcon}
-                    alt="linkedinIcon"
+                    src={instagramIcon}
+                    alt="instagramIcon"
                     style={{ cursor: "pointer" }}
                 />
               </IconBox>
+
             </Box>
         </CustomContainer>
       </Box>

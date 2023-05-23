@@ -1,6 +1,6 @@
 import React from 'react';
 import CartaPro from "./CartaPro";
-import {Box, Container, Grid, styled, Typography} from "@mui/material";
+import {Container, Grid, styled, Typography} from "@mui/material";
 import natiImage from "../../media/profesionales/nati2.png";
 import meliImage from "../../media/profesionales/meli2.png"
 import mariana from "../../media/profesionales/mariana2.png"
@@ -42,20 +42,22 @@ const Profesionales = () =>
             {
                 id: 5,
                 imagen: barbara,
-                nombre: "DRA. GONZALEZ Barbara",
+                nombre: "DRA. RIGONI Barbara",
                 descripcion: "Lic. en Psicologia, Acompañamiento Adultos y Niños, Abordaje Integral.",
             },
             {
                 id: 6,
+                imagen: mariana,
+                nombre: "DRA. MARIANI Marina",
+                descripcion: "Medica Clinica con orientacion en medicina funcional integrativa y ortomolecular.",
+            },
+        ];
+        const profesionalesExternos = [
+            {
+                id: 7,
                 imagen: graciela,
                 nombre: "DRA. VARELA Graciela",
                 descripcion: "Médica especializada en trastornos del neurodesarrollo y terapias naturales.",
-            },
-            {
-                id: 7,
-                imagen: mariana,
-                nombre: "DRA. MARIANI Mariana",
-                descripcion: "Medica Clinica con orientacion en medicina funcional integrativa y ortomolecular.",
             },
         ];
 
@@ -64,7 +66,7 @@ const Profesionales = () =>
                 <div className="titulo">
                     <h2>Nuestros Profesionales</h2>
                     <Typography sx={{ textAlign: "center"}}>
-                        En Metabolom nos dedicamos al estudio y tratamiento integral de las enfermedades metabólicas, con un enfoque personalizado y basado en la evidencia científica. Nuestro equipo está formado por médicos especialistas en endocrinología, nutrición y bioquímica clínica, que te acompañarán en todo el proceso para mejorar tu salud y calidad de vida.
+                        En Metabolom nos dedicamos al estudio y tratamiento integral de las enfermedades metabólicas, con un enfoque personalizado y basado en la evidencia científica. Nuestro equipo está formado por médicos especialistas en medicina integrativa, bioquímica en metabolismo, nutrición y psicología, que te acompañarán en todo el proceso para mejorar tu salud y calidad de vida.
                     </Typography>
                 </div>
                 <Grid container spacing={ 2 } style={ { justifyContent: "center" } }>
@@ -74,6 +76,17 @@ const Profesionales = () =>
                         </Grid>
                     )) }
                 </Grid>
+                <div className="titulo">
+                    <h2>Profesionales Externos</h2>
+                </div>
+                <Grid container spacing={ 2 } style={ { justifyContent: "center" } }>
+                    { profesionalesExternos.map(( profesionalesExternos ) => (
+                        <Grid item xs={ 12 } sm={ 10 } md={ 6 } key={ profesionalesExternos.id } sx={ { mb: 3, mt: 2 } }>
+                            <CartaPro { ...profesionalesExternos } />
+                        </Grid>
+                    )) }
+                </Grid>
+
             </Container>
         );
     };

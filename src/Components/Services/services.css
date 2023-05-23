@@ -51,7 +51,7 @@
     flex-direction: column;
     text-align: center;
     height: 400px;
-    width: 350px;
+    width: 450px;
     border-radius: 10px;
     color: white;
     cursor: pointer;
@@ -80,7 +80,7 @@
 @media (max-width: 1100px) {
     .cards .card {
         height: 320px;
-        width: 200px;
+        width: 300px;
     }
 
     .cards .green {

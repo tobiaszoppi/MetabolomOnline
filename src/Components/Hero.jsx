@@ -1,8 +1,7 @@
-import {Box, Button, styled, Typography} from "@mui/material";
+import {Box, styled, Typography} from "@mui/material";
 import {Container} from "@mui/system";
 import { Link as ScrollLink } from 'react-scroll';
 import React from "react";
-import Navbar from "./Navbar";
 
 import heroImg from "../media/metabolomLogo.png";
 import CustomButton from "./CustomButton";
@@ -42,18 +41,8 @@ const Hero = () =>
 
                     <CustomBox>
                         <Box sx={ { flex: "1", mb: 4 } }>
-                            <Typography
-                                variant="body2"
-                                sx={ {
-                                    fontSize: "18px",
-                                    color: "#687690",
-                                    fontWeight: "500",
-                                } }
-                            >
-                                Metabolom Online
-                            </Typography>
                             <Title variant="h1">
-                                Estudiamos tu salud desde todos los ángulos.
+                                Estudiamos tu salud desde todos los ángulos
                             </Title>
                             <Typography
                                 variant="body2"

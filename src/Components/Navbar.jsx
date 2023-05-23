@@ -8,7 +8,7 @@ import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
-import logoImg from "../media/metabolomLogoTexto.png";
+import logoImg from "../media/logonuevo.png";
 import CustomButton from "./CustomButton";
 import {
     Container,
@@ -63,7 +63,7 @@ const NavbarContainer = styled(Box)(({ theme }) => ({
 
 const NavbarLogo = styled("img")(({ theme }) => ({
     cursor: "pointer",
-    maxWidth: "50%",
+    maxWidth: "45%",
     [theme.breakpoints.down("md")]: {
         display: "none",
     },
@@ -221,6 +221,7 @@ export const Navbar = () => {
                         backgroundColor="#0F1B4C"
                         color="#fff"
                         buttonText="Seguimiento de Consulta"
+
                     />
                 </Box>
             </NavbarContainer>

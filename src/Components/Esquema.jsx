@@ -32,17 +32,20 @@ const Menu = styled(Box)(
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            fontSize: "1.8rem",
+            fontSize: "1.5rem",
             "p": {
                 fontFamily: "'Hanken Grotesk', sans-serif",
-                padding: "1rem 2rem",
+                padding: "0.5rem 1em",
+                margin: "0.5em 1rem",
                 borderBottom: "1px solid hsl(229, 8%, 60%)",
                 position: "relative",
                 cursor: "pointer",
-                color: "hsl(229, 31%, 21%)",
+                color: "#eef7fd",
                 transition: "0.5s",
+                backgroundColor: "hsl(229, 31%, 21%)",
+                borderRadius : "5px",
                 "&:hover": {
-                    color: "hsl(0, 94%, 66%)",
+                    color: "hsl(180,99%,32%)",
                 },
             },
             [ theme.breakpoints.down("md") ]: {
@@ -141,14 +144,14 @@ const Informacion = styled(Typography)(
     ( { theme } ) => (
         {
             color: "#eef7fd",
-            background: "hsl(231, 69%, 60%)",
+            background: "hsl(229, 31%, 21%)",
             border: "2px solid hsl(231, 69%, 60%)",
             borderRadius: "5px",
             fontFamily: "'Hanken Grotesk', sans-serif",
             fontSize: "1rem",
             padding: theme.spacing(0.7),
             "&:hover": {
-                color: "hsla(0,0%,0%,0.4)",
+                color: "hsl(180,99%,32%)",
             },
         }
     ));
@@ -187,16 +190,16 @@ const Esquema = () =>
                                 <img src={ Ilustracion1 } alt="features"/>
                             </Imagen>
                             <ContenedorSecundario>
-                                <TituloSecundario>Envió y Evaluación de Antecedentes</TituloSecundario>
+                                <TituloSecundario>Envío y Evaluación de Antecedentes</TituloSecundario>
                                 <TextoSecundario>
-                                    Para iniciar el tratamiento en Metabolom, el paciente debe completar y enviar el
+                                    Para iniciar el tratamiento en Metabolom el paciente debe completar y enviar el
                                     formulario que se encuentra al final de esta página.<br/>
                                     Además, debe adjuntar los resultados de los estudios clínicos que se haya
                                     realizado durante el último año.<br/>
                                     Los especialistas de Metabolom revisarán los antecedentes del paciente y le
                                     asignarán un turno para el primer encuentro virtual.<br/>
-                                    En esta sesión, se analizará en detalle la historia clínica del paciente y los
-                                    estudios previos. También se le indicará al paciente qué estudios específicos
+                                    En esta sesión se analizará en detalle la historia clínica del paciente y los
+                                    estudios previos. También se le indicará al paciente que estudios específicos
                                     debe realizar para investigar el origen de su afección.
                                 </TextoSecundario>
                                 <ScrollLink

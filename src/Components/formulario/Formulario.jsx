@@ -1,136 +1,162 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Etapa1 from './Etapa1';
 import Etapa2 from './Etapa2';
-import './formulario.css';
+import EtapaMenores from './EtapaMenores';
+import axios from 'axios';
+import { Container, styled, Typography, Checkbox, FormControlLabel, Grid } from '@mui/material';
 
-const Formulario = () =>
-    {
-        const [etapaActual, setEtapaActual] = useState(1);
-        const [datosEtapa1, setDatosEtapa1] = useState({
-            firstName: '',
-            lastName: '',
-            gender: '',
-            dateOfBirth: '',
-            email: '',
-            mobileNumber: '',
-            birthPlace: '',
-            idType: '',
-            idNumber: '',
+const Formulario = () => {
+    const [etapaActual, setEtapaActual] = useState(1);
+    const [datosEtapa1, setDatosEtapa1] = useState({
+        firstName: '',
+        lastName: '',
+        tutorFirstName: '',
+        tutorLastName: '',
+        gender: '',
+        dateOfBirth: '',
+        email: '',
+        mobileNumber: '',
+        birthPlace: '',
+        idType: '',
+        idNumber: '',
+    });
+    const [datosEtapa2, setDatosEtapa2] = useState({
+        addressType: '',
+        nationality: '',
+        state: '',
+        locality: '',
+        reason: '',
+        motherName: '',
+        grandfather: '',
+    });
+    const [formularioMenores, setFormularioMenores] = useState(false);
+
+    const manejarCambioEtapa1 = (nombreCampo, valorCampo) => {
+        setDatosEtapa1({
+            ...datosEtapa1,
+            [nombreCampo]: valorCampo,
         });
-        const [datosEtapa2, setDatosEtapa2] = useState({
-            addressType: '',
-            nationality: '',
-            state: '',
-            locality: '',
-            fatherName: '',
-            motherName: '',
-            grandfather: '',
-            password: '',
-            confirmPassword: ''
-        });
-
-        const manejarCambioEtapa1 = ( nombreCampo, valorCampo ) =>
-            {
-                setDatosEtapa1({
-                    ...datosEtapa1,
-                    [ nombreCampo ]: valorCampo
-                });
-            };
-
-        const manejarCambioEtapa2 = ( nombreCampo, valorCampo ) =>
-            {
-                setDatosEtapa2({
-                    ...datosEtapa2,
-                    [ nombreCampo ]: valorCampo
-                });
-            };
-
-        const manejarSiguienteEtapa = () =>
-            {
-                setEtapaActual(etapaActual + 1);
-            };
-
-        const volverEtapa1 = () =>
-            {
-                setEtapaActual(1);
-            };
-
-        const manejarEnviarFormulario = () =>
-            {
-                // Aquí puedes realizar la lógica para enviar los datos del formulario a través de una API
-                // Utiliza los datos de datosEtapa1 y datosEtapa2 para enviarlos a la API
-                // Puedes utilizar la función fetch u otra librería para realizar la llamada a la API
-                // Por ejemplo:
-                // fetch('https://ejemplo-api.com/formulario', {
-                //   method: 'POST',
-                //   body: JSON.stringify({
-                //     datosEtapa1,
-                //     datosEtapa2
-                //   }),
-                //   headers: {
-                //     'Content-Type': 'application/json'
-                //   }
-                // })
-                // .then((response) => response.json())
-                // .then((data) => {
-                //   // Manejar la respuesta de la API
-                //   console.log(data);
-                // })
-                // .catch((error) => {
-                //   // Manejar errores de la llamada a la API
-                //   console.error(error);
-                // });
-                // Nota: Recuerda ajustar la URL y los datos a tu propia API
-
-                // Una vez que se envíe el formulario, puedes realizar cualquier acción adicional necesaria,
-                // como mostrar un mensaje de éxito o redireccionar al usuario a otra página.
-                // Por ahora, simplemente imprimiremos los datos del formulario en la consola:
-                console.log('Datos del formulario:', { ...datosEtapa1, ...datosEtapa2 });
-            };
-
-        return (
-            <div className="formulario" id={ "Contacto" }>
-                { etapaActual === 1 && (
-                    <Etapa1
-                        datosEtapa1={ datosEtapa1 }
-                        manejarCambioEtapa1={ manejarCambioEtapa1 }
-                        manejarSiguienteEtapa={ manejarSiguienteEtapa }
-                    />
-                ) }
-                { etapaActual === 2 && (
-                    <Etapa2
-                        datosEtapa2={ datosEtapa2 }
-                        manejarCambioEtapa2={ manejarCambioEtapa2 }
-                        volverEtapa1={ volverEtapa1 }
-                        manejarEnviarFormulario={ manejarEnviarFormulario }
-                    />
-                ) }
-            </div>
-        );
     };
 
-/*
-* En este componente principal, `Form`, se utiliza el estado para controlar la etapa
-* actual del formulario (`etapaActual`) y los datos ingresados en cada etapa (`datosEtapa1` y `datosEtapa2`).
+    const manejarCambioEtapa2 = (nombreCampo, valorCampo) => {
+        setDatosEtapa2({
+            ...datosEtapa2,
+            [nombreCampo]: valorCampo,
+        });
+    };
 
-Se definen los métodos `manejarCambioEtapa1` y `manejarCambioEtapa2` para actualizar los datos
-* de cada etapa en el estado correspondiente.
+    const manejarCheckbox = (esMenor) => {
+        setFormularioMenores(esMenor);
+        setEtapaActual(1);
+    };
 
-Los métodos `manejarSiguienteEtapa` y `volverEtapa1` se utilizan para cambiar la etapa actual del formulario.
+    const manejarSiguienteEtapa = () => {
+        setEtapaActual(etapaActual + 1);
+    };
 
-El método `manejarEnviarFormulario` contiene la lógica para enviar los datos del formulario a través
-* de una API. En el ejemplo actual, se imprime simplemente los datos del formulario en la consola.
+    const volverEtapa1 = () => {
+        setEtapaActual(1);
+    };
 
-Dentro del componente, se renderiza la `Etapa1` si `etapaActual` es igual a 1 y la `Etapa2` si `etapaActual`
-* es igual a 2. Dependiendo de la etapa actual, se pasan los datos correspondientes y los métodos adecuados a
-* cada componente de etapa.
+    const manejarEnviarFormulario = () => {
+        let datosFormulario = {};
 
-Este componente `Form` se encargará de gestionar las etapas del formulario y los datos ingresados.
-* Puedes agregarlo a tu aplicación y utilizarlo como el componente principal para mostrar y
-* manejar el formulario completo.
+        if (formularioMenores) {
+            datosFormulario = {
+                etapaMenores: true,
+                datosEtapaMenores: datosEtapa1,
+                datosEtapa2: datosEtapa2,
+            };
+        } else {
+            datosFormulario = {
+                etapaMenores: false,
+                datosEtapa1: datosEtapa1,
+                datosEtapa2: datosEtapa2,
+            };
+        }
+        console.log(datosFormulario);
+        axios.post('http://localhost:8080/api/formularios', datosFormulario)
+            .then(response => {
+                console.log('Solicitud exitosa:', response.data);
+            })
+            .catch(error => {
+                console.error('Error en la solicitud:', error);
+            });
+    };
 
-Recuerda ajustar la lógica de envío del formulario a tu propia API y realizar las acciones necesarias según
-*  tus requisitos específicos.
 
-Espero que esto te ayude a implementar tu formulario y manejar los datos a través de una API. */
+    const CustomTitle = styled(Typography)(({ theme }) => ({
+        fontFamily: "'Hanken Grotesk', sans-serif",
+        fontSize: '35px',
+        color: '#000339',
+        fontWeight: '700',
+        textAlign: 'center',
+    }));
+
+    const renderEtapaActual = () => {
+        if (etapaActual === 1) {
+            if (formularioMenores) {
+                return (
+                    <EtapaMenores
+                        datosEtapaMenores={datosEtapa1}
+                        manejarCambioEtapa1={manejarCambioEtapa1}
+                        manejarSiguienteEtapa={manejarSiguienteEtapa}
+                    />
+                );
+            } else {
+                return (
+                    <Etapa1
+                        datosEtapa1={datosEtapa1}
+                        manejarCambioEtapa1={manejarCambioEtapa1}
+                        manejarSiguienteEtapa={manejarSiguienteEtapa}
+                    />
+                );
+            }
+        } else if (etapaActual === 2) {
+            return (
+                <Etapa2
+                    datosEtapa2={datosEtapa2}
+                    manejarCambioEtapa2={manejarCambioEtapa2}
+                    volverEtapa1={volverEtapa1}
+                    manejarEnviarFormulario={manejarEnviarFormulario}
+                />
+            );
+        }
+    };
+
+    return (
+        <Container id="Contacto">
+            <CustomTitle>Formulario de Consulta</CustomTitle>
+            <Grid container spacing={2}>
+                <Grid item xs={6}>
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={!formularioMenores}
+                                onChange={() => manejarCheckbox(false)}
+                                color="primary"
+                                sx={{alignContent: 'center', justifyContent: 'center', margin: 'auto'}}
+                            />
+                        }
+                        label="Formulario para Adultos (Soy Paciente o Tutor)"
+                    />
+                </Grid>
+                <Grid item xs={6}>
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={formularioMenores}
+                                onChange={() => manejarCheckbox(true)}
+                                color="primary"
+                            />
+                        }
+                        label="Formulario para Menores (Soy Tutor)"
+                    />
+                </Grid>
+            </Grid>
+            {renderEtapaActual()}
+        </Container>
+    );
+};
+
 export default Formulario;
