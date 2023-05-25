@@ -49,7 +49,7 @@ const Footer = () =>
             ));
 
         return (
-            <Box sx={ { py: 3 } }>
+            <Box sx={ { py: 3 } } >
                 <CustomContainer>
                     <Box>
                         <Typography

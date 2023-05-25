@@ -72,7 +72,7 @@ const Hero = () =>
                             <img
                                 src={ heroImg }
                                 alt="heroImg"
-                                style={ { maxWidth: "100%" } }
+                                style={ { maxWidth: "95%" } }
                             />
                         </Box>
                     </CustomBox>

@@ -1,6 +1,6 @@
 import {Container, styled, Typography} from "@mui/material";
 import React from "react";
-import logoImg from "../media/metabolomLogoTexto.png";
+import logoImg from "../media/logonuevo.png";
 import manosChicoImg from "../media/hermanosJugandoImg.jpg";
 
 const CustomBox = styled(Container)(

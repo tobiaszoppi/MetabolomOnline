@@ -42,7 +42,7 @@ const Profesionales = () =>
             {
                 id: 5,
                 imagen: barbara,
-                nombre: "DRA. RIGONI Barbara",
+                nombre: "LIC. RIGONI Barbara",
                 descripcion: "Lic. en Psicologia, Acompañamiento Adultos y Niños, Abordaje Integral.",
             },
             {
