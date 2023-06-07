@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import UserPanel from './UserPanel';
 import AdminPanel from './AdminPanel';
 import React from "react";
 import Login from "./Components/seguimiento/Login";
@@ -11,9 +10,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/iniciarSesion" element={<Login />} />
-
-                    <Route path="/adminpanel" element={<AdminPanel />} />
-
+                <Route path="/adminpanel" element={<AdminPanel />} />
             </Routes>
         </Router>
     );

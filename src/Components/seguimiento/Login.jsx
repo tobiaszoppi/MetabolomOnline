@@ -27,9 +27,9 @@ const Login = () =>
                             withCredentials:true
                         },*/
                     );
-                    console.log(response.headers[ 'Set-Cookie' ]);
+                    console.log(response.headers[ 'set-cookie' ]);
                     // Obtener las cookies de la respuesta
-                    const cookies = response.headers[ 'Set-Cookie' ];
+                    const cookies = response.headers[ 'set-cookie' ];
                     // Parsear las cookies para extraer solo el valor del token
                     const token = cookies[ 0 ].split(';')[ 0 ].split('=')[ 1 ];
 
