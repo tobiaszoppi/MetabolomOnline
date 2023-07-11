@@ -78,7 +78,19 @@ const FAQ = () =>
             {
                 question: "¿Cuales son los aranceles?",
                 answer:
-                    "\n",
+                    "En Metabolom, entendemos la importancia de brindar transparencia y claridad en cuanto a los costos asociados con nuestros servicios. A continuación, te proporcionamos información detallada sobre nuestros aranceles:\n" +
+                    "\n" +
+                    "Primer encuentro: El primer encuentro comprende el análisis de antecedentes, un encuentro integral médico-bioquímico y la coordinación para nuevos estudios. Este servicio tiene un costo de $20.000.\n" +
+                    "\n" +
+                    "Segundo encuentro: Aproximadamente 30 días después del primer encuentro, se llevará a cabo el segundo encuentro. En esta cita, interpretaremos los resultados, realizaremos una devolución integral, estableceremos los pasos a seguir y discutiremos el plan de tratamiento. El arancel para el segundo encuentro es de $20.000.\n" +
+                    "\n" +
+                    "Consulta con Nutricionista: Después del segundo encuentro, se puede programar una consulta con nuestro nutricionista especializado. Este servicio tiene un costo de $10.000.\n" +
+                    "\n" +
+                    "Seguimiento: Ofrecemos diferentes tipos de seguimiento para adaptarnos a tus necesidades individuales. Estos son los aranceles correspondientes:\n" +
+                    "\n" +
+                    "Seguimiento a los 90 días: $16.000.\n" +
+                    "Seguimiento nutricional: $7.000.\n" +
+                    "Seguimiento en casos complejos: $20.000.\n",
                 isOpen: false,
             },
             ])

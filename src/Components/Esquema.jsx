@@ -22,7 +22,7 @@ const Texto = styled(Typography)(
             fontSize: "1.4rem",
             textAlign: "center",
             lineHeight: 1.3,
-            color: "hsl(229, 8%, 60%)",
+            color: "hsl(0,0%,10%)",
         }
     ));
 
@@ -131,12 +131,12 @@ const TituloSecundario = styled(Typography)(
 const TextoSecundario = styled(Typography)(
     ( { theme } ) => (
         {
+            fontFamily: "'Hanken Grotesk', sans-serif",
 
-            textWeight: "300",
             textAlign: "left",
             fontSize: "1.4rem",
             lineHeight: 1.3,
-            color: "hsl(229, 8%, 60%)",
+            color: "hsl(0,0%,10%)",
         }
     ));
 

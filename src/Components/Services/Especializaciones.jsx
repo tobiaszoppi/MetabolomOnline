@@ -9,9 +9,10 @@ const CustomTitle = styled(Typography)(
             fontSize: "24px",
             fontWeight: "600",
             color: "#000339",
-            borderBottom: "3px solid rgba(0,186,255,0.2)",
+
         }
     ));
+
 const CustomTypography = styled(Typography)(
     () => (
         {

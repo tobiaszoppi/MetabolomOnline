@@ -3029,5 +3029,3 @@ G
 src/media/gmailIcon.svg,c\3\c3d3ed419ea350868b4acaea37712c53bc62b5b5
 K
 src/media/instagramIcon.svg,8\1\81acc0f7014e44294085ed39073fd9d9ef240995
-H
-src/Components/Guide.jsx,d\5\d51814fc0ebfe57d0e6872b83723076228976bf0

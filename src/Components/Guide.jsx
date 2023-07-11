@@ -55,13 +55,13 @@ const guideData = [
         icon: verifyIcon,
         title: "Verificación de Datos Personales y Antecedentes Clínicos",
         linkText: "Ver Formulario de Consulta",
-        linkTo: "Contacto",
+        linkTo: null,
     },
     {
         icon: encuentroIcon,
         title: "Primer Encuentro Virtual Bioquímico-Médico-Paciente",
         linkText: "Ver Formulario de Consulta",
-        linkTo: "Contacto",
+        linkTo: null,
     },
 ];
 
