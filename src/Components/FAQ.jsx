@@ -62,7 +62,7 @@ const FAQ = () =>
                     question: "¿Qué es Metabolom Online?",
                     answer:
                         "Metabolom es un centro de atención integral bioquímico - medico con abordaje de los ejes nutricionales, bioquímico, clínico y psicológico para el estudio y tratamiento de enfermedades metabólicas congénitas y adquiridas en pacientes de todas las edades. Cuenta con un equipo de profesionales especializados en bioquímica, medicina y nutrición que analizan los metabolitos presentes en el organismo, que son las pequeñas moléculas que se generan al metabolizar sustancias químicas, alimentos o tejidos. Estos metabolitos reflejan la interacción entre el genoma y el ambiente y pueden indicar el riesgo de padecer ciertas enfermedades o la causa de los síntomas. Metabolom propone un enfoque diferente a la medicina tradicional, observando al individuo completo y todos sus sistemas orgánicos interrelacionados.",
-                    isOpen: false,
+                    isOpen: true,
                 },
                 {
                     question: "¿Cómo puedo solicitar una Consulta?",
@@ -73,12 +73,12 @@ const FAQ = () =>
                         "4. Devolución del diagnóstico a partir de los resultados previamente obtenidos.\n" +
                         "5. Seguimiento y acompañamiento personalizado dependiendo de las necesidades del paciente.\n" +
                         "Para mas informacion puede visitar el apartado de 'Esquema de trabajo'",
-                    isOpen: false,
+                    isOpen: true,
                 },
             {
                 question: "¿Cuales son los aranceles?",
                 answer:
-                    "1. Complete el formulario que se encuentra en esta página y envíelo.\n",
+                    "\n",
                 isOpen: false,
             },
             ])

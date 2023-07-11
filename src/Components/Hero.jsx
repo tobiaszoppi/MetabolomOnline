@@ -28,7 +28,7 @@ const Hero = () =>
                     fontSize: "64px",
                     color: "#000336",
                     fontWeight: "bold",
-                    margin: theme.spacing(2, 0, 2, 0),
+                    margin: theme.spacing(2, 0, 0, 0),
                     [ theme.breakpoints.down("sm") ]: {
                         fontSize: "40px",
                     },
@@ -36,7 +36,7 @@ const Hero = () =>
             ));
 
         return (
-            <Box id={"Inicio"} sx={ {mb: 2, backgroundColor: "#E6F0FF", minHeight: "80vh" } } >
+            <Box id={"Inicio"} sx={ {mb: 0, backgroundColor: "#E6F0FF", minHeight: "80vh" } } >
                 <Container>
 
                     <CustomBox>

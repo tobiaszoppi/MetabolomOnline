@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import axios from 'axios';
 
 const Login = () =>
     {
@@ -11,32 +10,7 @@ const Login = () =>
                 e.preventDefault();
 
                 try {
-                    const response = await axios.post(
-                        'http://localhost:8080/api/auth/signin',
-                        {
-                            username: username,
-                            password: password,
-                        },
-                        /*{
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'Access-Control-Allow-Origin': '*',
-                                'Access-Control-Allow-Credentials': 'true',
-                                'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-                            },
-                            withCredentials:true
-                        },*/
-                    );
-                    console.log(response.headers[ 'Set-Cookie' ]);
-                    // Obtener las cookies de la respuesta
-                    const cookies = response.headers[ 'Set-Cookie' ];
-                    // Parsear las cookies para extraer solo el valor del token
-                    const token = cookies[ 0 ].split(';')[ 0 ].split('=')[ 1 ];
-
-
-                    localStorage.setItem('token', token);
-
-
+                    console.log("Credenciales: ", username, password);
                 } catch (error) {
                     console.error('Error de inicio de sesión:', error);
                 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -9,7 +9,6 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import logoImg from "../media/logonuevo.png";
-import CustomButton from "./CustomButton";
 import {
     Container,
     Drawer,
@@ -22,7 +21,7 @@ import {
 } from "@mui/material";
 
 const NavLink = styled(Typography)(({ theme }) => ({
-    fontSize: "14px",
+    fontSize: "22px",
     color: "#4F5361",
     fontWeight: "bold",
     cursor: "pointer",
@@ -47,15 +46,18 @@ const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({
     margin: theme.spacing(2, 0, 2, 0),
     [theme.breakpoints.down("md")]: {
         display: "block",
+        marginLeft: theme.spacing(2), // Margen izquierdo agregado
+        fontSize: "32px", // Tamaño del ícono aumentado
     },
 }));
 
-const NavbarContainer = styled(Box)(({ theme }) => ({
+const NavbarContainer = styled(Container)(({ theme }) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
     padding: theme.spacing(5, 0, 5, 0),
     gap: "5px",
+
     [theme.breakpoints.down("md")]: {
         padding: theme.spacing(2, 0, 2, 0),
     },
@@ -63,13 +65,16 @@ const NavbarContainer = styled(Box)(({ theme }) => ({
 
 const NavbarLogo = styled("img")(({ theme }) => ({
     cursor: "pointer",
-    maxWidth: "45%",
-    [theme.breakpoints.down("md")]: {
+    maxWidth: "60%",
+
+    [theme.breakpoints.down("lg")]: {
         display: "none",
     },
 }));
 
-export const Navbar = () => {
+const Navbar = () => {
+    const [mobileMenu, setMobileMenu] = useState({ left: false });
+
     useEffect(() => {
         const handleSmoothScroll = (event) => {
             event.preventDefault();
@@ -93,41 +98,6 @@ export const Navbar = () => {
         };
     }, []);
 
-    const list = (anchor) => (
-        <Box
-            sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
-            role="presentation"
-            onClick={toggleDrawer(anchor, false)}
-            onKeyDown={toggleDrawer(anchor, false)}
-        >
-            <List>
-                {["Inicio", "Metodologia", "Nosotros", "FAQ", "Contacto"].map(
-                    (text, index) => (
-                        <ListItem key={text} disablePadding>
-                            <ScrollLink
-                                to={text}
-                                smooth={true}
-                                duration={500}
-                                className="navbar-link"
-                            >
-                                <ListItemButton>
-                                    <ListItemIcon>
-                                        {index === 0 && <HomeIcon />}
-                                        {index === 1 && <FeaturedPlayListIcon />}
-                                        {index === 2 && <MiscellaneousServicesIcon />}
-                                        {index === 3 && <ListAltIcon />}
-                                        {index === 4 && <ContactsIcon />}
-                                    </ListItemIcon>
-                                    <ListItemText primary={text} />
-                                </ListItemButton>
-                            </ScrollLink>
-                        </ListItem>
-                    )
-                )}
-            </List>
-        </Box>
-    );
-
     const toggleDrawer = (anchor, open) => (event) => {
         if (
             event.type === "keydown" &&
@@ -139,93 +109,68 @@ export const Navbar = () => {
         setMobileMenu({ ...mobileMenu, [anchor]: open });
     };
 
-    const [mobileMenu, setMobileMenu] = React.useState({
-        left: false,
-    });
+    const renderIcon = (index) => {
+        switch (index) {
+            case 0:
+                return <HomeIcon />;
+            case 1:
+                return <FeaturedPlayListIcon />;
+            case 2:
+                return <MiscellaneousServicesIcon />;
+            case 3:
+                return <ListAltIcon />;
+            case 4:
+                return <ContactsIcon />;
+            default:
+                return null;
+        }
+    };
+
+    const renderNavLinks = () => {
+        const sections = ["Metodologia", "Nosotros", "Esquema", "FAQ", "Contacto"];
+
+        return sections.map((text, index) => (
+            <ListItem key={text} disablePadding>
+                <ScrollLink
+                    to={text}
+                    smooth={true}
+                    duration={500}
+                    className="navbar-link"
+                >
+                    <ListItemButton>
+                        <ListItemIcon>{renderIcon(index)}</ListItemIcon>
+                        <ListItemText primary={text} />
+                    </ListItemButton>
+                </ScrollLink>
+            </ListItem>
+        ));
+    };
 
     return (
-        <Container>
-            <NavbarContainer>
-                <Box
-                    sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        gap: "2.5rem",
-                    }}
-                >
-                    <Box sx={{ display: "flex", alignItems: "center" }}>
-                        <CustomMenuIcon onClick={toggleDrawer("left", true)} />
-                        <Drawer
-                            anchor="left"
-                            open={mobileMenu["left"]}
-                            onClose={toggleDrawer("left", false)}
-                        >
-                            {list("left")}
-                        </Drawer>
-                        <NavbarLogo src={logoImg} alt="logo" />
-                    </Box>
-
-                    <NavbarLinksBox>
-                        <ScrollLink
-                            to="Inicio"
-                            smooth={true}
-                            duration={500}
-                            className="navbar-link"
-                        >
-                            <NavLink variant="body2">Inicio</NavLink>
-                        </ScrollLink>
-                        <ScrollLink
-                            to="Metodologia"
-                            smooth={true}
-                            duration={500}
-                            className="navbar-link"
-                        >
-                            <NavLink variant="body2">Metodologia</NavLink>
-                        </ScrollLink>
-                        <ScrollLink
-                            to="Nosotros"
-                            smooth={true}
-                            duration={500}
-                            className="navbar-link"
-                        >
-                            <NavLink variant="body2">Nosotros</NavLink>
-                        </ScrollLink>
-                        <ScrollLink
-                            to="FAQ"
-                            smooth={true}
-                            duration={500}
-                            className="navbar-link"
-                        >
-                            <NavLink variant="body2">FAQ</NavLink>
-                        </ScrollLink>
-                        <ScrollLink
-                            to="Contacto"
-                            smooth={true}
-                            duration={500}
-                            className="navbar-link"
-                        >
-                            <NavLink variant="body2">Contacto</NavLink>
-                        </ScrollLink>
-                    </NavbarLinksBox>
+        <NavbarContainer>
+            <Box
+                sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "2.5rem",
+                }}
+            >
+                <Box sx={{ display: "flex", alignItems: "center", alignContent: "center", alignSelf: "center" }}>
+                    <CustomMenuIcon onClick={toggleDrawer("left", true)} />
+                    <Drawer
+                        anchor="left"
+                        open={mobileMenu["left"]}
+                        onClose={toggleDrawer("left", false)}
+                    >
+                        <List>{renderNavLinks()}</List>
+                    </Drawer>
+                    <NavbarLogo src={logoImg} alt="logo" />
                 </Box>
 
-                <Box
-                    sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <CustomButton
-                        backgroundColor="#0F1B4C"
-                        color="#fff"
-                        buttonText="Seguimiento de Consulta"
-
-                    />
-                </Box>
-            </NavbarContainer>
-        </Container>
+                <NavbarLinksBox>{renderNavLinks()}</NavbarLinksBox>
+            </Box>
+        </NavbarContainer>
     );
 };
 
