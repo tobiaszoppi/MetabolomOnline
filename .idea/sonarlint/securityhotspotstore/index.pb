@@ -1537,8 +1537,6 @@ Y
 )src/Components/profesionales/CartaPro.jsx,3\f\3f33a61252943b5e337218a8f54654c4c67927b3
 E
 src/dev/useInitial.js,c\8\c8c2209c7fc4548e384d1a15fda1695a79248ad9
-O
-src/Components/CustomButton.jsx,d\e\de5b883bc20230bd1e16a83117946ee7c934926f
 ^
 .src/Components/profesionales/profesionales.css,1\a\1adf795f5466fb36da1372f73e114707c8a80973
 Å
@@ -3029,3 +3027,17 @@ G
 src/media/gmailIcon.svg,c\3\c3d3ed419ea350868b4acaea37712c53bc62b5b5
 K
 src/media/instagramIcon.svg,8\1\81acc0f7014e44294085ed39073fd9d9ef240995
+;
+src/App.jsx,c\0\c0e9e59a467e1546695bfa22746b302540797a4e
+T
+$src/Components/seguimiento/Login.jsx,5\4\54022de77d8ffe152f1bebaa825e03678f1727f3
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+8
+src/.env,f\8\f8550963f8b93cc32435b4600b84f3d3def8daa7
+B
+.vercel/README.txt,d\d\dde3d62e5f0c21f21f4f921754f27bf67bb133a1
+D
+.vercel/project.json,1\b\1b041dbd5ac055be08f3d50836baaadebb52dffa
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a

@@ -99,6 +99,21 @@ export const CustomTypografy = styled(Typography)(({ theme }) => ({
     padding: "15px",
 }));
 
+//CustomBoxParaNavBar
+export const NavbarContainer = styled(Box)(() => ({
+    width: "100%",
+    marginLeft: "auto",
+    boxSizing: "border-box",
+    marginRight: "auto",
+    display: "flex",
+    webkitBoxAlign: "center",
+    alignItems: "center",
+    webkitBoxPack: "justify",
+    justifyContent: "space-between",
+    padding: "40px 0px",
+    gap: "5px"
+}));
+
 // Estilos para contenedores con flexbox y gap
 export const FlexContainer = styled(Box)(({ theme, flexDirection, alignItems, justifyContent, gap }) => ({
     display: "flex",
@@ -270,12 +285,13 @@ export const FAQTitle = styled(Typography)(({ theme }) => ({
 
 // Estilos para el texto en la sección FAQ
 export const FAQText = styled(Typography)(({ theme }) => ({
-    fontFamily: "'Hanken Grotesk', sans-serif",
-    fontWeight: "200",
-    fontSize: "1.4rem",
+    fontFamily: "Roboto, Helvetica, Arial, sans-serif",
+    fontWeight: "400",
+    fontSize: "1rem",
     textAlign: "center",
-    lineHeight: 1.6,
-    color: "hsl(229, 8%, 60%)",
+    lineHeight: 1.5,
+    letterSpacing: "0.00938em",
+    display: "block",
 }));
 
 // Estilos para la sección Esquema

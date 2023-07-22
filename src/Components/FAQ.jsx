@@ -83,7 +83,7 @@ const FAQ = () => {
                             </ListItemButton>
                             <Collapse in={item.isOpen} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
-                                    <ListItemIcon>
+                                    <ListItemIcon sx={{ marginLeft: "50%"}}>
                                         <QuestionAnswerIcon />
                                     </ListItemIcon>
                                     {/* Utilizamos el componente FAQText para el texto de la respuesta */}

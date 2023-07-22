@@ -21,13 +21,13 @@ const Hero = () => {
                 <CustomFlexBox>
                     <Box sx={{ flex: "1", mb: 4 }}>
                         {/* Utilizar el componente CustomTitle en lugar de Typography */}
-                        <CustomTitle variant="h1">Estudiamos tu salud desde todos los ángulos</CustomTitle>
+                        <CustomTitle variant="h1" sx={{mb:4}}>Estudiamos tu salud desde todos los ángulos</CustomTitle>
                         {/* Utilizar el componente CustomText en lugar de Typography */}
-                        <CustomText variant="body2">
+                        <CustomText variant="body2" sx={{mb:4}}>
                             Metabolom brinda un servicio multidisciplinario bioquímico-médico-nutricionista para la investigación y
                             diagnóstico de Enfermedades Metabólicas Congénitas y Adquiridas en pacientes neonatos, niños y adultos.
                         </CustomText>
-                        <ScrollLink to="Nosotros" smooth={true} duration={500}>
+                        <ScrollLink to="Nosotros" smooth={true} duration={500} sx={{mb:4}}>
                             <CustomButton backgroundColor="#0F1B4C" color="#fff" buttonText="Mas Sobre Nosotros" heroBtn={true} />
                         </ScrollLink>
                     </Box>
