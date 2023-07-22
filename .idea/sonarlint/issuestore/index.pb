@@ -3390,8 +3390,6 @@ G
 src/media/gmailIcon.svg,c\3\c3d3ed419ea350868b4acaea37712c53bc62b5b5
 K
 src/media/instagramIcon.svg,8\1\81acc0f7014e44294085ed39073fd9d9ef240995
-;
-src/App.jsx,c\0\c0e9e59a467e1546695bfa22746b302540797a4e
 A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 8

@@ -22,8 +22,8 @@ const LandingPage = () => {
             <Esquema />
             <InformacionGeneral />
             <Especializaciones />
-            <FAQ />
             <Formulario />
+            <FAQ />
             <Footer/>
         </>
     );
