@@ -1,48 +1,20 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink } from "react-scroll";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import CustomButton from "./CustomButton";
+
+// Importamos los estilos compartidos
+import {
+    GuideContainer,
+    GuideBox,
+    ImageContainer,
+    GuidesBox,
+} from "./SharedStyles";
 
 import formIcon from "../media/formIcon.png";
 import verifyIcon from "../media/verifyIcon.png";
 import encuentroIcon from "../media/encuentroIcon.png";
-
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import CustomButton from "./CustomButton";
-import styled from "@mui/material/styles/styled";
-
-const CustomBox = styled(Box)(({ theme }) => ({
-    width: "30%",
-    [theme.breakpoints.down("md")]: {
-        width: "85%",
-    },
-}));
-
-const GuidesBox = styled(Box)(({ theme }) => ({
-    display: "flex",
-    justifyContent: "space-around",
-    textAlign: "center",
-    width: "80%",
-    margin: theme.spacing(5, "auto"),
-    [theme.breakpoints.down("md")]: {
-        width: "100%",
-    },
-    [theme.breakpoints.down("sm")]: {
-        flexDirection: "column",
-    },
-}));
-
-const GuideBox = styled(Box)(({ theme }) => ({
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    padding: "10px",
-    maxWidth: "300px",
-    marginTop: theme.spacing(5),
-    [theme.breakpoints.down("sm")]: {
-        margin: theme.spacing(2, 0),
-        maxWidth: "100%",
-    },
-}));
+import { Typography, Box } from "@mui/material";
 
 const guideData = [
     {
@@ -69,7 +41,9 @@ const Guide = () => {
     const renderGuides = () => {
         return guideData.map((guide, index) => (
             <GuideBox key={index}>
-                <img src={guide.icon} alt="guideIcon" style={{ width: "100px" }} />
+                <ImageContainer>
+                    <img src={guide.icon} alt="guideIcon" style={{ width: "100px" }} />
+                </ImageContainer>
                 <Typography variant="body2" sx={{ fontWeight: "500", fontSize: "20px", color: "#3B3c45", my: 1 }}>
                     {guide.title}
                 </Typography>
@@ -111,23 +85,18 @@ const Guide = () => {
                 ¿Cuáles son los pasos?
             </Typography>
 
-            <CustomBox>
+            {/* Utilizamos el componente GuideContainer que hemos creado */}
+            <GuideContainer>
                 <Typography variant="body2" sx={{ fontSize: "16px", fontWeight: "500", color: "#5A6473", textAlign: "center" }}>
                     ¡Todo lo que necesitas saber para realizar una consulta virtual en Metabolom!
                 </Typography>
-            </CustomBox>
+            </GuideContainer>
 
-            <GuidesBox>
-                {renderGuides()}
-            </GuidesBox>
+            {/* Utilizamos el componente GuidesBox que hemos creado */}
+            <GuidesBox>{renderGuides()}</GuidesBox>
 
             <ScrollLink to="Esquema" smooth={true} duration={500}>
-                <CustomButton
-                    backgroundColor="#0F1B4C"
-                    color="#fff"
-                    buttonText="Ver Guia Completa"
-                    guideBtn={true}
-                />
+                <CustomButton backgroundColor="#0F1B4C" color="#fff" buttonText="Ver Guia Completa" guideBtn={true} />
             </ScrollLink>
         </Box>
     );
